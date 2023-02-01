@@ -2,6 +2,9 @@ import React from "react"
 import useDarkMode from "use-dark-mode"
 import Toggle from "react-toggle"
 
+import Moon from "../../assets/images/moon.svg"
+import Sun from "../../assets/images/sun.svg"
+
 const DarkModeToggle = () => {
   const darkMode = useDarkMode(false)
 
@@ -21,7 +24,7 @@ const DarkModeToggle = () => {
           }
         }}
       >
-        {darkMode.value ? "Switch to Light" : "Switch to Dark"}
+        {darkMode.value ? <img src={Moon} /> : <img src={Sun} />}
       </button>
       {/* <Toggle
         checked={darkMode.value}
