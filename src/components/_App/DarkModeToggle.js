@@ -12,10 +12,12 @@ const DarkModeToggle = () => {
         onClick={() => {
           console.log(darkMode.value)
           console.log(typeof darkMode.value)
-          if (darkMode.value === "true") {
+          if (darkMode.value === true) {
             darkMode.enable()
+            localStorage.setItem("darkMode", "true")
           } else {
             darkMode.disable()
+            localStorage.setItem("darkMode", "false")
           }
         }}
       >
