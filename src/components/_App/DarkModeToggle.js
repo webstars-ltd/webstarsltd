@@ -12,13 +12,13 @@ const DarkModeToggle = () => {
         onClick={() => {
           console.log(darkMode.value)
           if (darkMode.value) {
-            darkMode.disable()
+            darkMode.enable()
           } else {
-            darkMode.enable
+            darkMode.disable()
           }
         }}
       >
-        {darkMode.value ? "Switch to Dark" : "Switch to Light"}
+        {darkMode.value ? "Switch to Light" : "Switch to Dark"}
       </button>
       {/* <Toggle
         checked={darkMode.value}
