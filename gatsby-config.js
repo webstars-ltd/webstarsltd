@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://webstarsltd.netlify.app/`,
+    siteUrl: `https://updatedsite-dev.netlify.app`,
   },
   plugins: [
     `gatsby-plugin-sass`,
@@ -10,6 +10,14 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-fontawesome-css`,
     `gatsby-plugin-netlify`,
+    {
+      resolve: "gatsby-plugin-use-dark-mode",
+      options: {
+        classNameDark: "dark-mode",
+        classNameLight: "light-mode",
+        storageKey: "darkMode",
+      },
+    },
     {
       resolve: "gatsby-plugin-sitemap",
       query: `

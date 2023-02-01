@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Logo from "../../assets/images/logo.png"
+import DarkModeToggle from "./DarkModeToggle"
 
 const Navbar = () => {
   const [menu, setMenu] = React.useState(true)
@@ -54,7 +55,10 @@ const Navbar = () => {
             </button>
 
             <div className={classOne} id="navbarSupportedContent">
+              <DarkModeToggle />
               <ul className="navbar-nav ms-auto">
+                {/* <li className="nav-item"> */}
+                {/* </li> */}
                 <li className="nav-item">
                   <Link to="/process" className="nav-link">
                     Process
