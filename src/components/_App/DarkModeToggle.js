@@ -11,6 +11,7 @@ const DarkModeToggle = () => {
         type="button"
         onClick={() => {
           console.log(darkMode.value)
+          console.log(typeof darkMode.value)
           if (darkMode.value === "true") {
             darkMode.enable()
           } else {
