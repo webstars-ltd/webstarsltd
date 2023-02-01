@@ -13,11 +13,11 @@ const DarkModeToggle = () => {
           console.log(darkMode.value)
           console.log(typeof darkMode.value)
           if (darkMode.value === true) {
-            darkMode.enable()
-            localStorage.setItem("darkMode", "true")
-          } else {
             darkMode.disable()
             localStorage.setItem("darkMode", "false")
+          } else {
+            darkMode.enable()
+            localStorage.setItem("darkMode", "true")
           }
         }}
       >
