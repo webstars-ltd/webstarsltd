@@ -1,8 +1,6 @@
 import React from "react"
 import useDarkMode from "use-dark-mode"
-
-import Moon from "../../assets/images/moon.png"
-import Sun from "../../assets/images/sun.png"
+import { Moon, Sun } from "react-feather"
 
 const DarkModeToggle = () => {
   const darkMode = useDarkMode(false)
@@ -21,11 +19,7 @@ const DarkModeToggle = () => {
           }
         }}
       >
-        {darkMode.value ? (
-          <img src={Sun} height="75px" width="75px" />
-        ) : (
-          <img src={Moon} height="75px" width="75px" />
-        )}
+        {darkMode.value ? <Sun /> : <Moon />}
       </button>
     </div>
   )

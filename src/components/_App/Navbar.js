@@ -55,10 +55,7 @@ const Navbar = () => {
             </button>
 
             <div className={classOne} id="navbarSupportedContent">
-              <DarkModeToggle />
               <ul className="navbar-nav ms-auto">
-                {/* <li className="nav-item"> */}
-                {/* </li> */}
                 <li className="nav-item">
                   <Link to="/process" className="nav-link">
                     Process
@@ -93,6 +90,10 @@ const Navbar = () => {
                   >
                     Team
                   </Link>
+                </li>
+
+                <li className="nav-item">
+                  <DarkModeToggle />
                 </li>
               </ul>
             </div>
