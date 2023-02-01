@@ -24,7 +24,11 @@ const DarkModeToggle = () => {
           }
         }}
       >
-        {darkMode.value ? <img src={Moon} /> : <img src={Sun} />}
+        {darkMode.value ? (
+          <img src={Sun} height="75px" width="75px" />
+        ) : (
+          <img src={Moon} height="75px" width="75px" />
+        )}
       </button>
       {/* <Toggle
         checked={darkMode.value}
