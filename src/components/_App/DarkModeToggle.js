@@ -19,7 +19,7 @@ const DarkModeToggle = () => {
           }
         }}
       >
-        {darkMode.value ? <Sun /> : <Moon />}
+        <div className="toggle-icon">{darkMode.value ? <Sun /> : <Moon />}</div>
       </button>
     </div>
   )
