@@ -2101,9 +2101,9 @@ body.dark-mode {
   transform: translate(0, 0) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1);
   width: 2.5rem;
   height: 2.5rem;
-  position: absolute;
+  position: fixed;
   bottom: 0;
-  right: 0;
+  right: 20;
 
   &:hover {
     border-color: rgb(127 127 139/1);
