@@ -16,20 +16,22 @@ export const useStoryblok = originalStory => {
   if (typeof storyCopy.content === "string")
     storyCopy.content = JSON.parse(storyCopy.content)
 
-  const modifiedId = storyCopy.id.split("-")
-  storyCopy.id = parseInt(modifiedId[1])
+  console.log(storyCopy)
 
-  let [story, setStory] = useState(storyCopy)
+  // const modifiedId = storyCopy.uid.split("-")
+  // storyCopy.id = parseInt(modifiedId[1])
 
-  const BlokBrigdeConf = () => {
-    useStoryblokBridge(story.id, newStory => setStory(newStory), {
-      resolveRelations: ["posts-list.posts"],
-    })
-  }
+  // let [story, setStory] = useState(storyCopy)
 
-  useEffect(() => {
-    BlokBrigdeConf()
-  }, [])
+  // const BlokBrigdeConf = () => {
+  //   useStoryblokBridge(story.id, newStory => setStory(newStory), {
+  //     resolveRelations: ["posts-list.posts"],
+  //   })
+  // }
 
-  return story
+  // useEffect(() => {
+  //   BlokBrigdeConf()
+  // }, [])
+
+  // return story
 }

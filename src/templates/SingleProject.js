@@ -10,7 +10,7 @@ import Footer from "../components/_App/Footer"
 // Page level import statements
 import MainSingleProject from "../components/SingleProject/MainSingleProject"
 
-import { useStoryblok } from "../utils/storyblok"
+import { useStoryblok } from "../utils/storyblokkk"
 
 const SingleProject = ({ data }) => {
   let story = data.story
