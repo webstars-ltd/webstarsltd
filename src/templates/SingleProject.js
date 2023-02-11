@@ -15,8 +15,8 @@ import { useStoryblok } from "../utils/storyblok"
 const SingleProject = ({ data }) => {
   let story = data.story
 
-  story = useStoryblok(story)
   console.log(story)
+  useStoryblok(story)
 
   return (
     // Main Layout Component
