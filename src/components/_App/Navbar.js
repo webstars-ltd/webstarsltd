@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Logo from "../../assets/images/logo.png"
-import DarkModeToggle from "./DarkModeToggle"
+import LogoWhite from "../../assets/images/logo-white.png"
 
 const Navbar = () => {
   const [menu, setMenu] = React.useState(true)
@@ -36,7 +36,11 @@ const Navbar = () => {
         <div className="container">
           <nav className="navbar navbar-expand-md navbar-light">
             <Link to="/" onClick={toggleNavbar} className="navbar-brand">
-              <img src={Logo} alt="logo" />
+              {localStorage.getItem("darkMode") === "true" ? (
+                <img src={LogoWhite} alt="logo" />
+              ) : (
+                <img src={Logo} alt="logo" />
+              )}
             </Link>
 
             <button
