@@ -19,18 +19,18 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `)
 
-  // const insightQueryResponse = await graphql(`
-  //   query {
-  //     allStoryblokEntry(filter: { field_component: { eq: "Single Insight" } }) {
-  //       edges {
-  //         node {
-  //           field_component
-  //           slug
-  //         }
-  //       }
-  //     }
-  //   }
-  // `)
+  const insightQueryResponse = await graphql(`
+    query {
+      allStoryblokEntry(filter: { field_component: { eq: "Single Insight" } }) {
+        edges {
+          node {
+            field_component
+            slug
+          }
+        }
+      }
+    }
+  `)
 
   res?.data?.allStoryblokEntry.edges.forEach(edge => {
     createPage({
@@ -42,13 +42,13 @@ exports.createPages = async ({ graphql, actions }) => {
     })
   })
 
-  // insightQueryResponse?.data?.allStoryblokEntry.edges.forEach(edge => {
-  //   createPage({
-  //     component: insightTemplate,
-  //     path: `/insights/${edge?.node?.slug}`,
-  //     context: {
-  //       slug: edge?.node?.slug,
-  //     },
-  //   })
-  // })
+  insightQueryResponse?.data?.allStoryblokEntry.edges.forEach(edge => {
+    createPage({
+      component: insightTemplate,
+      path: `/insights/${edge?.node?.slug}`,
+      context: {
+        slug: edge?.node?.slug,
+      },
+    })
+  })
 }
