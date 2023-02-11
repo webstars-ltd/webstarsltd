@@ -2091,7 +2091,10 @@ body.dark-mode {
   color: #999;
   transition: background-color 0.3s ease;
 
-  .home-banner {
+  .home-banner,
+  .home-banner-process,
+  .home-banner-profile,
+  .home-banner-project {
     h1 {
       .d-block {
         color: #079c9e;
