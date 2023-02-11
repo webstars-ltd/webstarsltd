@@ -12,10 +12,16 @@ const Navbar = () => {
     setMenu(!menu)
   }
 
-  if (typeof window !== "undefined") {
-    const value = JSON.parse(localStorage.getItem("darkMode"))
-    setDarkMode(value)
+  const updateDarkMode = () => {
+    if (typeof window !== "undefined") {
+      const value = JSON.parse(localStorage.getItem("darkMode"))
+      setDarkMode(value)
+    }
   }
+
+  React.useEffect(() => {
+    updateDarkMode()
+  }, [typeof window !== "undefined" && localStorage.getItem("darkMode")])
 
   React.useEffect(() => {
     let elementId = document.getElementById("header")
