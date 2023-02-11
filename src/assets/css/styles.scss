@@ -2084,6 +2084,17 @@ body.light-mode {
   background-color: #fff !important;
   color: #333;
   transition: background-color 0.3s ease;
+
+  .home-banner {
+    h1 {
+      .d-block {
+        color: #079c9e;
+      }
+      .theme-color {
+        color: #fff;
+      }
+    }
+  }
 }
 body.dark-mode {
   background-color: #000 !important;
