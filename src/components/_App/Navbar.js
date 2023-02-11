@@ -30,8 +30,10 @@ const Navbar = () => {
     ? "navbar-toggler navbar-toggler-right collapsed"
     : "navbar-toggler navbar-toggler-right"
 
-  console.log(typeof window !== "undefined" && localStorage.getItem("darkMode"))
-  console.log(typeof localStorage.getItem("darkMode"))
+  if (typeof window !== "undefined") {
+    console.log(localStorage.getItem("darkMode"))
+    console.log(typeof localStorage.getItem("darkMode"))
+  }
 
   return (
     <header id="header" className="headroom">
