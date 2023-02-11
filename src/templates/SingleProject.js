@@ -15,7 +15,8 @@ import { useStoryblok } from "../utils/storyblok"
 const SingleProject = ({ data }) => {
   let story = data.story
 
-  story = useStoryblok(story)
+  console.log(story)
+  // story = useStoryblok(story)
 
   return (
     // Main Layout Component
@@ -23,7 +24,7 @@ const SingleProject = ({ data }) => {
       <SEO title="Single Project" />
       <Navbar />
       {/* Body Component Starts here */}
-      <MainSingleProject blok={story.content} url={story.full_slug} />
+      {/* <MainSingleProject blok={story.content} url={story.full_slug} /> */}
       {/* Body Component Ends here */}
       <Footer />
     </Layout>
