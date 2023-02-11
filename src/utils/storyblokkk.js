@@ -20,17 +20,17 @@ export const useStoryblok = originalStory => {
   storyCopy.id = parseInt(modifiedId[1])
 
   console.log(storyCopy.id)
-  // let [story, setStory] = useState(storyCopy)
+  let [story, setStory] = useState(storyCopy)
 
-  // const BlokBrigdeConf = () => {
-  //   useStoryblokBridge(story.id, newStory => setStory(newStory), {
-  //     resolveRelations: ["posts-list.posts"],
-  //   })
-  // }
+  const BlokBrigdeConf = () => {
+    useStoryblokBridge(story.id, newStory => setStory(newStory), {
+      resolveRelations: ["posts-list.posts"],
+    })
+  }
 
-  // useEffect(() => {
-  //   BlokBrigdeConf()
-  // }, [])
+  useEffect(() => {
+    BlokBrigdeConf()
+  }, [])
 
-  // return story
+  return story
 }
