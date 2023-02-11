@@ -181,6 +181,7 @@ Navbar CSS
     &.is-sticky {
       box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
       background-color: $white-color !important;
+      z-index: 999999;
 
       padding: {
         top: 15px;
@@ -2113,6 +2114,20 @@ body.dark-mode {
 
   #header.headroom.is-sticky {
     background-color: #000 !important;
+  }
+
+  .navbar-nav {
+    .nav-item {
+      a {
+        color: #fff;
+
+        &:hover,
+        &:focus,
+        &.active {
+          color: #079c9e;
+        }
+      }
+    }
   }
 }
 
