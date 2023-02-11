@@ -6,7 +6,7 @@ import LogoWhite from "../../assets/images/logo-white.png"
 
 const Navbar = () => {
   const [menu, setMenu] = React.useState(true)
-  let darkMode = false
+  const [darkMode, setDarkMode] = React.useState(false)
 
   const toggleNavbar = () => {
     setMenu(!menu)
@@ -14,9 +14,7 @@ const Navbar = () => {
 
   if (typeof window !== "undefined") {
     const value = JSON.parse(localStorage.getItem("darkMode"))
-    console.log(value)
-    console.log(typeof value)
-    darkMode = value
+    setDarkMode(value)
   }
 
   React.useEffect(() => {
