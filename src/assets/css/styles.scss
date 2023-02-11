@@ -2110,6 +2110,10 @@ body.dark-mode {
       color: #fff;
     }
   }
+
+  #header.headroom.is-sticky {
+    background-color: #000 !important;
+  }
 }
 
 .toggle-icon {
