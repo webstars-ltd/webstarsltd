@@ -42,7 +42,7 @@ const Navbar = () => {
           <nav className="navbar navbar-expand-md navbar-light">
             <Link to="/" onClick={toggleNavbar} className="navbar-brand">
               {typeof window !== "undefined" &&
-              localStorage.getItem("darkMode") === "true" ? (
+              JSON.parse(localStorage.getItem("darkMode")) === "true" ? (
                 <img src={LogoWhite} alt="logo" />
               ) : (
                 <img src={Logo} alt="logo" />
