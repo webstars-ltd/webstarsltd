@@ -1,9 +1,9 @@
 import React from "react"
 import useDarkMode from "use-dark-mode"
 
-export const darkMode = useDarkMode(false)
-
 const DarkModeToggle = () => {
+  const darkMode = useDarkMode(false)
+
   return (
     <div className="dark-mode-toggle">
       <button

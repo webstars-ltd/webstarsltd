@@ -3,13 +3,20 @@ import { Link } from "gatsby"
 
 import Logo from "../../assets/images/logo.png"
 import LogoWhite from "../../assets/images/logo-white.png"
-import { darkMode } from "./DarkModeToggle"
 
 const Navbar = () => {
   const [menu, setMenu] = React.useState(true)
+  let darkMode = false
 
   const toggleNavbar = () => {
     setMenu(!menu)
+  }
+
+  if (typeof window !== "undefined") {
+    const value = JSON.parse(localStorage.getItem("darkMode"))
+    console.log(value)
+    console.log(typeof value)
+    darkMode = value
   }
 
   React.useEffect(() => {
@@ -37,7 +44,7 @@ const Navbar = () => {
         <div className="container">
           <nav className="navbar navbar-expand-md navbar-light">
             <Link to="/" onClick={toggleNavbar} className="navbar-brand">
-              {darkMode.value === true ? (
+              {darkMode === true ? (
                 <img src={LogoWhite} alt="logo" />
               ) : (
                 <img src={Logo} alt="logo" />
