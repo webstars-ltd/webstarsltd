@@ -30,6 +30,9 @@ const Navbar = () => {
     ? "navbar-toggler navbar-toggler-right collapsed"
     : "navbar-toggler navbar-toggler-right"
 
+  console.log(localStorage.getItem("darkMode"))
+  console.log(typeof localStorage.getItem("darkMode"))
+
   return (
     <header id="header" className="headroom">
       <div className="startp-nav">
