@@ -13,9 +13,9 @@ import MainSingleProject from "../components/SingleProject/MainSingleProject"
 import { useStoryblok } from "../utils/storyblokkk"
 
 const SingleProject = ({ data }) => {
-  let story = data.story
+  let storyParse = data.story
 
-  story = useStoryblok(story)
+  const story = useStoryblok(storyParse)
   console.log(story)
 
   return (
