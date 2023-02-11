@@ -16,11 +16,10 @@ export const useStoryblok = originalStory => {
   if (typeof storyCopy.content === "string")
     storyCopy.content = JSON.parse(storyCopy.content)
 
-  console.log(storyCopy.id.split("-"))
+  const modifiedId = storyCopy.id.split("-")
+  storyCopy.id = parseInt(modifiedId[1])
 
-  // const modifiedId = storyCopy.id.split("-")
-  // storyCopy.id = parseInt(modifiedId[1])
-
+  console.log(storyCopy.id)
   // let [story, setStory] = useState(storyCopy)
 
   // const BlokBrigdeConf = () => {
