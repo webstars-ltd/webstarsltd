@@ -16,9 +16,9 @@ export const useStoryblok = originalStory => {
   if (typeof storyCopy.content === "string")
     storyCopy.content = JSON.parse(storyCopy.content)
 
-  console.log(storyCopy)
+  console.log(storyCopy.id.split("-"))
 
-  // const modifiedId = storyCopy.uid.split("-")
+  // const modifiedId = storyCopy.id.split("-")
   // storyCopy.id = parseInt(modifiedId[1])
 
   // let [story, setStory] = useState(storyCopy)
