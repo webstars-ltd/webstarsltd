@@ -2133,6 +2133,15 @@ body.dark-mode {
   .processSec1-r-cont p {
     color: #fff;
   }
+
+  .profileSec1-card {
+    h6 {
+      color: #fff;
+    }
+    p {
+      color: $navlink-color;
+    }
+  }
 }
 
 .toggle-icon {
