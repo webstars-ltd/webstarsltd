@@ -2178,6 +2178,12 @@ body.dark-mode {
         background-color: #000;
       }
     }
+
+    .navbar-toggler {
+      .icon-bar {
+        background: #fff;
+      }
+    }
   }
 }
 
