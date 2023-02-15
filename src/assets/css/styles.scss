@@ -2177,7 +2177,7 @@ body.dark-mode {
       &.headroom {
         background-color: #000;
       }
-      #header.headroom.is-sticky {
+      &.headroom.is-sticky {
         background-color: #000 !important;
       }
     }
