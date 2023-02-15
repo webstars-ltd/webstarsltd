@@ -2142,6 +2142,20 @@ body.dark-mode {
       color: $navlink-color;
     }
   }
+
+  .text {
+    h2 p {
+      color: #fff;
+    }
+
+    .underline-style {
+      color: #079c9e;
+
+      &:hover {
+        color: #329999;
+      }
+    }
+  }
 }
 
 .toggle-icon {
