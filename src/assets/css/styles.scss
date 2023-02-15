@@ -2113,7 +2113,7 @@ body.dark-mode {
   }
 
   #header.headroom.is-sticky {
-    background-color: #000 !important;
+    background-color: #000;
   }
 
   .navbar-nav {
@@ -2170,6 +2170,14 @@ body.dark-mode {
 
   .testiSec-cont p {
     color: $navlink-color;
+  }
+
+  @media only screen and ($feature_max: 767px) {
+    #header {
+      &.headroom {
+        background-color: #000;
+      }
+    }
   }
 }
 
