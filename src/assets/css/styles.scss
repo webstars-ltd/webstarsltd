@@ -2172,7 +2172,7 @@ body.dark-mode {
     color: $navlink-color;
   }
 
-  @media only screen and ($feature_max: 767px) {
+  @media only screen and (max-width: 767px) {
     #header {
       &.headroom {
         background-color: #000;
