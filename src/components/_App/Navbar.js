@@ -1,28 +1,31 @@
 import React from "react"
 import { Link } from "gatsby"
+import useDarkMode from "use-dark-mode"
 
 import Logo from "../../assets/images/logo.png"
 import LogoWhite from "../../assets/images/logo-white.png"
 
 const Navbar = () => {
   const [menu, setMenu] = React.useState(true)
-  const [darkMode, setDarkMode] = React.useState(false)
+  const darkModeActual = useDarkMode(false)
+
+  // const [darkMode, setDarkMode] = React.useState(false)
 
   const toggleNavbar = () => {
     setMenu(!menu)
   }
 
-  const updateDarkMode = () => {
-    console.log("Use Effect call")
-    if (typeof window !== "undefined") {
-      const value = JSON.parse(localStorage.getItem("darkMode"))
-      setDarkMode(value)
-    }
-  }
+  // const updateDarkMode = () => {
+  //   console.log("Use Effect call")
+  //   if (typeof window !== "undefined") {
+  //     const value = JSON.parse(localStorage.getItem("darkMode"))
+  //     setDarkMode(value)
+  //   }
+  // }
 
-  React.useEffect(() => {
-    updateDarkMode()
-  }, [typeof window !== "undefined" && localStorage.getItem("darkMode")])
+  // React.useEffect(() => {
+  //   updateDarkMode()
+  // }, [typeof window !== "undefined" && localStorage.getItem("darkMode")])
 
   React.useEffect(() => {
     let elementId = document.getElementById("header")
@@ -49,7 +52,7 @@ const Navbar = () => {
         <div className="container">
           <nav className="navbar navbar-expand-md navbar-light">
             <Link to="/" onClick={toggleNavbar} className="navbar-brand">
-              {darkMode === true ? (
+              {darkModeActual.value === true ? (
                 <img src={LogoWhite} alt="logo" />
               ) : (
                 <img src={Logo} alt="logo" />
