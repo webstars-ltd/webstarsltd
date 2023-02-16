@@ -13,6 +13,7 @@ const Navbar = () => {
   }
 
   const updateDarkMode = () => {
+    console.log("Use Effect call")
     if (typeof window !== "undefined") {
       const value = JSON.parse(localStorage.getItem("darkMode"))
       setDarkMode(value)
