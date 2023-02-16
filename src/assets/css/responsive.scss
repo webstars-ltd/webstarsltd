@@ -31,7 +31,8 @@ $value_seven: 1550px;
     }
   }
 
-  .processSection1 {
+  .processSection1,
+  .processSection1-full {
     padding: 68px 0 400px;
 
     .row {
@@ -167,7 +168,7 @@ $value_seven: 1550px;
   }
 
   footer {
-    .row>* {
+    .row > * {
       margin: 0px !important;
     }
 
@@ -192,7 +193,7 @@ $value_seven: 1550px;
 
   .marketing-guide {
     .row {
-      &>* {
+      & > * {
         padding: 0px !important;
       }
     }
@@ -329,7 +330,7 @@ $value_seven: 1550px;
         .nav-item {
           padding: 5px 0;
 
-          >a {
+          > a {
             margin: 0 0 5px;
 
             i,
@@ -482,7 +483,6 @@ $value_seven: 1550px;
 
   footer {
     .row {
-
       .col-lg-2,
       .col-lg-3 {
         margin-top: 30px;

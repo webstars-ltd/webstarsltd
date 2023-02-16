@@ -1374,6 +1374,16 @@ Home CSS
   }
 }
 
+.processSection1-full {
+  padding: 68px 0 0px;
+
+  .row {
+    .col-lg-6:first-child {
+      width: 100%;
+    }
+  }
+}
+
 .processSec1-r-cont {
   padding-right: 35px;
 }
