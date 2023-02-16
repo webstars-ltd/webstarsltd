@@ -8,7 +8,7 @@ const ProcessDescription = ({ blok }) => {
     <div {...storyblokEditable(blok)}>
       <section class="processSection1">
         <div class="custom-container">
-          <div class="row align-items-end">
+          <div class="row align-items-center">
             <div class="col-sm-12 col-md-6 col-lg-6">
               <div class="processSec1-r-cont">
                 {render(blok.process_details, {
