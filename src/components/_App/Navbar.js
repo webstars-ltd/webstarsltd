@@ -9,23 +9,9 @@ const Navbar = () => {
   const [menu, setMenu] = React.useState(true)
   const darkModeActual = useDarkMode(false)
 
-  // const [darkMode, setDarkMode] = React.useState(false)
-
   const toggleNavbar = () => {
     setMenu(!menu)
   }
-
-  // const updateDarkMode = () => {
-  //   console.log("Use Effect call")
-  //   if (typeof window !== "undefined") {
-  //     const value = JSON.parse(localStorage.getItem("darkMode"))
-  //     setDarkMode(value)
-  //   }
-  // }
-
-  // React.useEffect(() => {
-  //   updateDarkMode()
-  // }, [typeof window !== "undefined" && localStorage.getItem("darkMode")])
 
   React.useEffect(() => {
     let elementId = document.getElementById("header")
