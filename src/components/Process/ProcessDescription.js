@@ -4,7 +4,6 @@ import { storyblokEditable } from "@storyblok/js"
 import { render, MARK_LINK } from "storyblok-rich-text-react-renderer"
 
 const ProcessDescription = ({ blok }) => {
-  console.log(blok.process_sayings ? blok.process_sayings : "not found")
   return (
     <div {...storyblokEditable(blok)}>
       {blok.process_sayings ? (
