@@ -23,7 +23,7 @@ const SingleInsight = ({ data }) => {
       <SEO title="Single Insights" />
       <Navbar />
       {/* Body Component Starts here */}
-      {/* <InsightComponent blok={story.content} url={story.full_slug} /> */}
+      <InsightComponent blok={story.content} url={story.full_slug} />
       {/* Body Component Ends here */}
       <Footer />
     </Layout>

@@ -6,7 +6,7 @@ import GlobalAudience from "../Projects/GlobalAudience"
 import EnvelopeSection from "../Projects/EnvelopeSection"
 
 const SimilarProjects = ({ url }) => {
-  let storyToSuggest = {}
+  let storyToSuggest = []
   let { story } = useStaticQuery(graphql`
     query {
       story: allStoryblokEntry(
@@ -27,18 +27,23 @@ const SimilarProjects = ({ url }) => {
   `)
 
   story.edges.forEach(currentStory => {
-    if (`projects/${currentStory.node.slug}` !== url) {
-      storyToSuggest = currentStory.node
+    if (
+      `projects/${currentStory.node.slug}` !== url &&
+      storyToSuggest.length <= 1
+    ) {
+      storyToSuggest.push(currentStory.node)
     }
   })
 
-  if (storyToSuggest.uuid) {
-    storyToSuggest = useStoryblok(storyToSuggest)
-  }
+  const storyToSuggestCopyOne = useStoryblok(storyToSuggest[0])
+  const storyToSuggestCopyTwo = useStoryblok(storyToSuggest[1])
 
-  return storyToSuggest ? (
-    <div>
-      {storyToSuggest.content.body[0]?.project_display[0].component ===
+  console.log(storyToSuggestCopyOne)
+  console.log(storyToSuggestCopyTwo)
+
+  return
+  ;<div>
+    {/* {storyToSuggest.content.body[0]?.project_display[0].component ===
       "Envelope Section" ? (
         <EnvelopeSection
           component={storyToSuggest.content.body[0]?.project_display[0]}
@@ -49,11 +54,8 @@ const SimilarProjects = ({ url }) => {
           component={storyToSuggest.content.body[0]?.project_display[0]}
           slug={storyToSuggest.slug}
         />
-      )}
-    </div>
-  ) : (
-    <></>
-  )
+      )} */}
+  </div>
 }
 
 export default SimilarProjects
