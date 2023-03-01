@@ -14,7 +14,7 @@ const Components = {
   description_section: InsightDescription,
   guide: MarketingGuide,
   bottom_text_copy: Text,
-  show_insights_suggestions: SimilarInsights,
+  // show_insights_suggestions: SimilarInsights,
 }
 
 const DynamicComponent = ({ blok, url }) => {
