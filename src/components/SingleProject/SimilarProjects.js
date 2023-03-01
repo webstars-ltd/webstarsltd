@@ -26,14 +26,14 @@ const SimilarProjects = ({ url }) => {
     }
   `)
 
-  console.log(story)
+  story.edges.forEach(currentStory => {
+    if (`projects/${currentStory.node.slug}` !== url) {
+      storyToSuggest = currentStory.node
+      return
+    }
+  })
 
-  // story.edges.forEach(currentStory => {
-  //   if (`projects/${currentStory.node.slug}` !== url) {
-  //     storyToSuggest = currentStory.node
-  //     return
-  //   }
-  // })
+  console.log(storyToSuggest)
 
   // storyToSuggest = useStoryblok(storyToSuggest)
 
