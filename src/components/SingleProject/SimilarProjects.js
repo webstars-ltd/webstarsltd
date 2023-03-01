@@ -26,18 +26,20 @@ const SimilarProjects = ({ url }) => {
     }
   `)
 
-  story.edges.forEach(currentStory => {
-    if (`projects/${currentStory.node.slug}` !== url) {
-      storyToSuggest = currentStory.node
-      return
-    }
-  })
+  console.log(story)
 
-  storyToSuggest = useStoryblok(storyToSuggest)
+  // story.edges.forEach(currentStory => {
+  //   if (`projects/${currentStory.node.slug}` !== url) {
+  //     storyToSuggest = currentStory.node
+  //     return
+  //   }
+  // })
+
+  // storyToSuggest = useStoryblok(storyToSuggest)
 
   return (
     <div>
-      {storyToSuggest.content.body[0]?.project_display[0].component ===
+      {/* {storyToSuggest.content.body[0]?.project_display[0].component ===
       "Envelope Section" ? (
         <EnvelopeSection
           component={storyToSuggest.content.body[0]?.project_display[0]}
@@ -48,7 +50,7 @@ const SimilarProjects = ({ url }) => {
           component={storyToSuggest.content.body[0]?.project_display[0]}
           slug={storyToSuggest.slug}
         />
-      )}
+      )} */}
     </div>
   )
 }

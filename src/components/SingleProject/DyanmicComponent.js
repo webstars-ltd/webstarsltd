@@ -16,11 +16,10 @@ const Components = {
   single_project_banner: BannerImage,
   single_project_banner_text: BannerText,
   single_project_solution: Solution,
-  // show_projects_suggestions: SimilarProjects,
+  show_projects_suggestions: SimilarProjects,
 }
 
 const DyanmicComponent = ({ blok, url }) => {
-  console.log(blok)
   if (typeof Components[blok.component] !== "undefined") {
     const Component = Components[blok.component]
     return <Component blok={blok} key={blok._uid} url={url} />
