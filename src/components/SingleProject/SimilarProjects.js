@@ -33,13 +33,13 @@ const SimilarProjects = ({ url }) => {
     }
   })
 
-  console.log(storyToSuggest)
+  if (storyToSuggest) {
+    storyToSuggest = useStoryblok(storyToSuggest)
+  }
 
-  // storyToSuggest = useStoryblok(storyToSuggest)
-
-  return (
+  return storyToSuggest ? (
     <div>
-      {/* {storyToSuggest.content.body[0]?.project_display[0].component ===
+      {storyToSuggest.content.body[0]?.project_display[0].component ===
       "Envelope Section" ? (
         <EnvelopeSection
           component={storyToSuggest.content.body[0]?.project_display[0]}
@@ -50,8 +50,10 @@ const SimilarProjects = ({ url }) => {
           component={storyToSuggest.content.body[0]?.project_display[0]}
           slug={storyToSuggest.slug}
         />
-      )} */}
+      )}
     </div>
+  ) : (
+    <></>
   )
 }
 
