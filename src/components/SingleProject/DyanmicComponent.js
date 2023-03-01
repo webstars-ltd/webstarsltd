@@ -10,7 +10,7 @@ import SimilarProjects from "./SimilarProjects"
 import Text from "./Text"
 
 const Components = {
-  "Summary Section": Summary,
+  summary_section: Summary,
   bottom_text: Text,
   similar_project_card: SimilarProjectQuote,
   single_project_banner: BannerImage,
