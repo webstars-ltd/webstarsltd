@@ -20,6 +20,7 @@ const Components = {
 }
 
 const DyanmicComponent = ({ blok, url }) => {
+  console.log(blok)
   if (typeof Components[blok.component] !== "undefined") {
     const Component = Components[blok.component]
     // return <Component blok={blok} key={blok._uid} url={url} />
