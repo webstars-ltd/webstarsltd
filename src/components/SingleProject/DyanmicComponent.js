@@ -10,13 +10,13 @@ import SimilarProjects from "./SimilarProjects"
 import Text from "./Text"
 
 const Components = {
-  summary_section: Summary,
+  "Summary Section": Summary,
   bottom_text: Text,
   similar_project_card: SimilarProjectQuote,
   single_project_banner: BannerImage,
   single_project_banner_text: BannerText,
   single_project_solution: Solution,
-  show_projects_suggestions: SimilarProjects,
+  // show_projects_suggestions: SimilarProjects,
 }
 
 const DyanmicComponent = ({ blok, url }) => {
