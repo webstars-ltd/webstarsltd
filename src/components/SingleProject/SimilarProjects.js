@@ -7,6 +7,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 const SimilarProjects = ({ url }) => {
   let storyToSuggest = []
+  let storyToSuggestCopyOne
   let { story } = useStaticQuery(graphql`
     query {
       story: allStoryblokEntry(
@@ -35,25 +36,24 @@ const SimilarProjects = ({ url }) => {
     }
   })
 
-  // const storyToSuggestCopyOne = useStoryblok(storyToSuggest[0])
-  // const storyToSuggestCopyTwo = useStoryblok(storyToSuggest[1])
-
-  console.log(storyToSuggest)
+  if (storyToSuggest.length) {
+    storyToSuggestCopyOne = useStoryblok(storyToSuggest[0])
+  }
 
   return (
     <div>
-      {/* {storyToSuggest.content.body[0]?.project_display[0].component ===
+      {storyToSuggestCopyOne.content.body[0]?.project_display[0].component ===
       "Envelope Section" ? (
         <EnvelopeSection
-          component={storyToSuggest.content.body[0]?.project_display[0]}
-          slug={storyToSuggest.slug}
+          component={storyToSuggestCopyOne.content.body[0]?.project_display[0]}
+          slug={storyToSuggestCopyOne.slug}
         />
       ) : (
         <GlobalAudience
-          component={storyToSuggest.content.body[0]?.project_display[0]}
-          slug={storyToSuggest.slug}
+          component={storyToSuggestCopyOne.content.body[0]?.project_display[0]}
+          slug={storyToSuggestCopyOne.slug}
         />
-      )} */}
+      )}
     </div>
   )
 }
