@@ -40,8 +40,8 @@ const SimilarProjects = ({ url }) => {
     storyToSuggestCopyOne = useStoryblok(storyToSuggest[0])
   }
 
-  return (
-    <div>
+  return storyToSuggest.length ? (
+    <>
       {storyToSuggestCopyOne.content.body[0]?.project_display[0].component ===
       "Envelope Section" ? (
         <EnvelopeSection
@@ -54,8 +54,8 @@ const SimilarProjects = ({ url }) => {
           slug={storyToSuggestCopyOne.slug}
         />
       )}
-    </div>
-  )
+    </>
+  ) : null
 }
 
 export default SimilarProjects
