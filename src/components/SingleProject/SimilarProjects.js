@@ -1,9 +1,9 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-import { useStoryblok } from "../../utils/storyblok"
-import GlobalAudience from "../Projects/GlobalAudience"
-import EnvelopeSection from "../Projects/EnvelopeSection"
+// import { useStoryblok } from "../../utils/storyblok"
+// import GlobalAudience from "../Projects/GlobalAudience"
+// import EnvelopeSection from "../Projects/EnvelopeSection"
 
 const SimilarProjects = ({ url }) => {
   let storyToSuggest = []
@@ -40,9 +40,9 @@ const SimilarProjects = ({ url }) => {
 
   console.log(storyToSuggest)
 
-  return
-  ;<div>
-    {/* {storyToSuggest.content.body[0]?.project_display[0].component ===
+  return (
+    <div>
+      {/* {storyToSuggest.content.body[0]?.project_display[0].component ===
       "Envelope Section" ? (
         <EnvelopeSection
           component={storyToSuggest.content.body[0]?.project_display[0]}
@@ -54,7 +54,8 @@ const SimilarProjects = ({ url }) => {
           slug={storyToSuggest.slug}
         />
       )} */}
-  </div>
+    </div>
+  )
 }
 
 export default SimilarProjects
