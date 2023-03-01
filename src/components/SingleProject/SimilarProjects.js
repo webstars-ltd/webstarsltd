@@ -35,11 +35,10 @@ const SimilarProjects = ({ url }) => {
     }
   })
 
-  const storyToSuggestCopyOne = useStoryblok(storyToSuggest[0])
-  const storyToSuggestCopyTwo = useStoryblok(storyToSuggest[1])
+  // const storyToSuggestCopyOne = useStoryblok(storyToSuggest[0])
+  // const storyToSuggestCopyTwo = useStoryblok(storyToSuggest[1])
 
-  console.log(storyToSuggestCopyOne)
-  console.log(storyToSuggestCopyTwo)
+  console.log(storyToSuggest)
 
   return
   ;<div>
