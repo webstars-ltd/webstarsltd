@@ -29,11 +29,10 @@ const SimilarProjects = ({ url }) => {
   story.edges.forEach(currentStory => {
     if (`projects/${currentStory.node.slug}` !== url) {
       storyToSuggest = currentStory.node
-      return
     }
   })
 
-  if (storyToSuggest) {
+  if (storyToSuggest.uuid) {
     storyToSuggest = useStoryblok(storyToSuggest)
   }
 
