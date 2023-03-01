@@ -11,8 +11,8 @@ import Text from "./Text"
 
 const Components = {
   // "Summary Section": Summary,
-  // bottom_text: Text,
-  // similar_project_card: SimilarProjectQuote,
+  bottom_text: Text,
+  similar_project_card: SimilarProjectQuote,
   single_project_banner: BannerImage,
   single_project_banner_text: BannerText,
   // single_project_solution: Solution,
