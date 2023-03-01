@@ -2116,6 +2116,18 @@ body.dark-mode {
     }
   }
 
+  .home-banner-single-insight {
+    h1 {
+      .d-block {
+        color: #fff;
+      }
+
+      .theme-color {
+        color: #079c9e;
+      }
+    }
+  }
+
   .home-banner-single-project {
     h1 {
       color: #079c9e;
