@@ -8,6 +8,9 @@ import LogoWhite from "../../assets/images/logo-white.png"
 const Navbar = () => {
   const [menu, setMenu] = React.useState(true)
   const darkModeActual = useDarkMode(false)
+  const [value, setValue] = React.useState(
+    darkModeActual.value ? darkModeActual.value : false
+  )
 
   const toggleNavbar = () => {
     setMenu(!menu)
@@ -25,6 +28,14 @@ const Navbar = () => {
     window.scrollTo(0, 0)
   })
 
+  React.useEffect(() => {
+    if (typeof window === "undefined" || !window.document) {
+      const dark = JSON.parse(localStorage.getItem("darkMode"))
+      console.log(dark)
+      setValue(dark)
+    }
+  }, [darkModeActual.value])
+
   const classOne = menu
     ? "collapse navbar-collapse"
     : "collapse navbar-collapse show"
@@ -38,13 +49,11 @@ const Navbar = () => {
         <div className="container">
           <nav className="navbar navbar-expand-md navbar-light">
             <Link to="/" onClick={toggleNavbar} className="navbar-brand">
-              {typeof window === "undefined" ? (
-                JSON.parse(localStorage.getItem("darkMode")) === true ? (
-                  <img src={LogoWhite} alt="logo" />
-                ) : (
-                  <img src={Logo} alt="logo" />
-                )
-              ) : null}
+              {value === true ? (
+                <img src={LogoWhite} alt="logo" />
+              ) : (
+                <img src={Logo} alt="logo" />
+              )}
             </Link>
 
             <button
