@@ -628,6 +628,11 @@ Home CSS
   }
 }
 
+.home-banner-process {
+  width: 70%;
+  margin: 0 auto;
+}
+
 .home-banner-profile {
   h1 {
     text-align: center;
@@ -2117,9 +2122,6 @@ body.dark-mode {
   }
 
   .home-banner-process {
-    width: 70%;
-    margin: 0 auto;
-
     padding: {
       top: 100px;
       bottom: 30px;
