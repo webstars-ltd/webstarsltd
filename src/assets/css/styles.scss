@@ -631,6 +631,11 @@ Home CSS
 .home-banner-process {
   width: 70%;
   margin: 0 auto;
+
+  padding: {
+    top: 150px;
+    bottom: 0px;
+  }
 }
 
 .home-banner-profile {
@@ -2118,13 +2123,6 @@ body.dark-mode {
       .theme-color {
         color: #fff;
       }
-    }
-  }
-
-  .home-banner-process {
-    padding: {
-      top: 100px;
-      bottom: 30px;
     }
   }
 
