@@ -32,6 +32,7 @@ const Process = () => {
     <Layout>
       <SEO title="Process" />
       <Navbar />
+      <div style={{ marginTop: 240 }}></div>
       {/* Body Component Starts here */}
       <ProcessMain blok={story.content} />
       {/* Body Component Ends here */}
