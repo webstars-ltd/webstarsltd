@@ -29,7 +29,7 @@ const Navbar = () => {
   })
 
   React.useEffect(() => {
-    if (typeof window === "undefined" || !window.document) {
+    if (typeof window === "undefined") {
       const dark = JSON.parse(localStorage.getItem("darkMode"))
       console.log(dark)
       setValue(dark)
