@@ -19,11 +19,11 @@ const EnvelopeSection = ({ component, slug }) => {
                 <div className="stats">
                   <h4>
                     {component.Numbers_Content[0].Numbers}{" "}
-                    <span>{component.Numbers_Content[0].Numbers_Text}</span>
+                    <span>{component.Numbers_Content[0]?.Numbers_Text}</span>
                   </h4>
                   <h4 className="stats-last">
                     {component.Numbers_Content[1].Numbers}{" "}
-                    <span>{component.Numbers_Content[1].Numbers_Text}</span>
+                    <span>{component.Numbers_Content[1]?.Numbers_Text}</span>
                   </h4>
                 </div>
               </div>
