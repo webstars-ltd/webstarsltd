@@ -2131,9 +2131,14 @@ body.dark-mode {
   }
 
   .singleInsightSec1-cont {
-    h6,
+    img {
+      margin-bottom: 20px;
+    }
+    h1,
+    h2,
+    h3 h4,
     h5,
-    h3 {
+    h6 {
       color: #079c9e;
     }
     p {
