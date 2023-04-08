@@ -2,8 +2,8 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 import { useStoryblok } from "../../utils/storyblok"
-// import GlobalAudience from "../Projects/GlobalAudience"
-// import EnvelopeSection from "../Projects/EnvelopeSection"
+import GlobalAudience from "../Projects/GlobalAudience"
+import EnvelopeSection from "../Projects/EnvelopeSection"
 
 const SimilarProjects = ({ url }) => {
   let storyToSuggest = []
