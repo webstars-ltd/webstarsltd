@@ -9,7 +9,7 @@ const Navbar = () => {
   const [menu, setMenu] = React.useState(true)
   const darkModeActual = useDarkMode(false)
   const [value, setValue] = React.useState(
-    darkModeActual.value ? darkModeActual.value : false
+    darkModeActual.value ? darkModeActual.value : true
   )
 
   const toggleNavbar = () => {
