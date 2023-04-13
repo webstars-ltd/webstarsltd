@@ -1848,9 +1848,14 @@ Home CSS
 .singleInsightSec1-profile a svg {
   font-size: 22px !important;
 }
-
+.singleInsightSec1-profile-img {
+  width: 200px;
+  height: 220px;
+}
 .singleInsightSec1-profile-img img {
   border-radius: 50%;
+  width: 100%;
+  height: 100%;
 }
 
 .singleInsightSec1-cont h6 {

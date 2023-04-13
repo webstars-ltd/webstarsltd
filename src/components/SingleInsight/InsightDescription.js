@@ -60,7 +60,7 @@ const InsightDescription = ({ blok }) => {
             <div class="col-lg-4 col-md-4 col-sm-12">
               <div class="singleInsightSec1-profile">
                 <div class="singleInsightSec1-profile-img">
-                  <img src={blok.user_img.filename} alt="" />
+                  <img src={blok.user_img.filename} alt="" z />
                 </div>
 
                 <h6>By {blok.user_name}</h6>
