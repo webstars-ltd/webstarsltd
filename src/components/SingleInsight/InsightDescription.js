@@ -33,8 +33,12 @@ const InsightDescription = ({ blok }) => {
       padding: "50px 30px",
     },
   }
-  function closeModal() {
+  const closeModal = () => {
     setShowPopup(false)
+  }
+
+  const openModal = () => {
+    setShowPopup(true)
   }
 
   return (
@@ -103,6 +107,7 @@ const InsightDescription = ({ blok }) => {
                     <FontAwesomeIcon icon={faYoutube} />
                   </Link>
                 </div>
+                <button onClick={openModal}>Contact Us</button>
               </div>
             </div>
             <div class="col-lg-8 col-md-8 col-sm-12">
