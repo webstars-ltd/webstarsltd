@@ -57,16 +57,19 @@ const Footer = () => {
               <h4>Follow Us</h4>
               <ul>
                 <li>
-                  <Link to="/">LinkedIn</Link>
+                  <Link to="https://www.linkedin.com/company/webstars-ltd/" target="_blank">LinkedIn</Link>
                 </li>
                 <li>
-                  <Link to="/">Twitter</Link>
+                  <Link to="https://twitter.com/WebstarsLtd" target="_blank">Twitter</Link>
                 </li>
                 <li>
-                  <Link to="/">Facebook</Link>
+                  <Link to="https://www.facebook.com/webstarsltd" target="_blank">Facebook</Link>
                 </li>
                 <li>
-                  <Link to="/">Instagram</Link>
+                  <Link to="https://www.instagram.com/webstarsltd/" target="_blank">Instagram</Link>
+                </li>
+                <li>
+                  <Link to="https://www.youtube.com/@webstarsltd" target="_blank">Youtube</Link>
                 </li>
               </ul>
             </div>
