@@ -37,7 +37,7 @@ const Footer = () => {
               <h4>Contact Us</h4>
               <ul>
               <li>
-                  <a href="tel:020 7183 0058">
+                  <a href="tel:+44 20 7183 0058">
                   020 7183 0058
                   </a>
                 </li> 
