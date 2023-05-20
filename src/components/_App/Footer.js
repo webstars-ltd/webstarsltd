@@ -36,6 +36,11 @@ const Footer = () => {
             <div className="footer_info">
               <h4>Contact Us</h4>
               <ul>
+              <li>
+                  <a href="tel:+020 7183 0058">
+                  020 7183 0058
+                  </a>
+                </li> 
                 <li>
                   <a href="mailto:hello@webstarsltd.com">
                     hello@webstarsltd.com
