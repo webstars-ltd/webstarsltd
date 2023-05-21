@@ -8,6 +8,8 @@ import SEO from "../components/_App/seo"
 import Navbar from "../components/_App/Navbar"
 import Footer from "../components/_App/Footer"
 
+import MainPrivacy from "../components/Privacy/MainPrivacy"
+
 const PrivacyPolicy = () => {
     // Query for Home Page Data
   let { story } = useStaticQuery(graphql`
@@ -37,7 +39,7 @@ const PrivacyPolicy = () => {
       />
       <Navbar />
       {/* Body Component Starts here */}
-      {/* <MainHome blok={story.content} /> */}
+      <MainPrivacy blok={story.content} />
       {/* Body Component Ends here */}
       <Footer />
     </Layout>
