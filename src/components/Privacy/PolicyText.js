@@ -5,7 +5,7 @@ import { render, MARK_LINK } from "storyblok-rich-text-react-renderer"
 
 const Text = ({ blok }) => {
   return (
-    <div className="pb-80">
+    <div className="home-banner">
       <div {...storyblokEditable(blok)}>
         <div className="text">
           <h2>
