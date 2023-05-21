@@ -90,10 +90,10 @@ const Footer = () => {
                     <Link to="/privacy-policy">Privacy</Link>
                   </li>
                   <li>
-                    <Link to="/">T&Cs</Link>
+                    <Link to="/terms-conditions">T&Cs</Link>
                   </li>
                   <li>
-                    <Link to="/">Cookies</Link>
+                    <Link to="/cookies">Cookies</Link>
                   </li>
                 </ul>
               </div>

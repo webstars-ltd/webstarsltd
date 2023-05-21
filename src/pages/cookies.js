@@ -8,13 +8,13 @@ import SEO from "../components/_App/seo"
 import Navbar from "../components/_App/Navbar"
 import Footer from "../components/_App/Footer"
 
-import MainPrivacy from "../components/Privacy/MainPrivacy"
+import MainCookie from "../components/Cookies/MainCookie"
 
 const PrivacyPolicy = () => {
     // Query for Home Page Data
   let { story } = useStaticQuery(graphql`
     query {
-        story: storyblokEntry(name: { eq: "Privacy Policy" }) {
+        story: storyblokEntry(name: { eq: "Cookies" }) {
         full_slug
         name
         uuid
@@ -25,7 +25,6 @@ const PrivacyPolicy = () => {
     `)
 
     story = useStoryblokState(story)
-
 
   return (
     // Main Layout Component
@@ -38,7 +37,7 @@ const PrivacyPolicy = () => {
       />
       <Navbar />
       {/* Body Component Starts here */}
-      <MainPrivacy blok={story.content} />
+      <MainCookie blok={story.content} />
       {/* Body Component Ends here */}
       <Footer />
     </Layout>
