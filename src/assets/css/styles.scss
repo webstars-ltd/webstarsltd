@@ -536,6 +536,19 @@ Go Top CSS
 /*=============================
 Home CSS
 ===============================*/
+
+.policy-container {
+  width: 80%;
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: left;
+  
+  padding: {
+    top: 140px;
+    bottom: 100px;
+  }
+}
+
 .home-banner-single-insight {
   width: 100%;
   max-width: 100%;

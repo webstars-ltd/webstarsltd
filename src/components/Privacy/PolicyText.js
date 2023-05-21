@@ -5,9 +5,9 @@ import { render, MARK_LINK } from "storyblok-rich-text-react-renderer"
 
 const Text = ({ blok }) => {
   return (
-    <div className="home-banner">
+    <div className="policy-container">
       <div {...storyblokEditable(blok)}>
-        <div className="text">
+        <div className="policy-text">
           <h2>
             {render(blok.text, {
               markResolvers: {
