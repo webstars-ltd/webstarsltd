@@ -87,7 +87,7 @@ const Footer = () => {
                 <ul>
                   <li>&copy; Webstars {new Date().getFullYear()}</li>
                   <li>
-                    <Link to="/">Privacy</Link>
+                    <Link to="/privacy-policy">Privacy</Link>
                   </li>
                   <li>
                     <Link to="/">T&Cs</Link>
