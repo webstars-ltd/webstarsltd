@@ -6,11 +6,10 @@ import { render, MARK_LINK } from "storyblok-rich-text-react-renderer"
 const Text = ({ blok }) => {
   return (
     <div className="pb-80">
-        {console.log(blok)}
-      {/* <div {...storyblokEditable(blok)}>
+      <div {...storyblokEditable(blok)}>
         <div className="text">
           <h2>
-            {render(blok.bottom_text, {
+            {render(blok.text, {
               markResolvers: {
                 [MARK_LINK]: (children, props) => {
                   const { href } = props
@@ -24,7 +23,7 @@ const Text = ({ blok }) => {
             })}
           </h2>
         </div>
-      </div> */}
+      </div>
     </div>
   )
 }
