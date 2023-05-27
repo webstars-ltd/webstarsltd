@@ -23,7 +23,10 @@ const LandingPageBlogs = ({ blok }) => {
     }
   `)
 
-  console.log(insights)
+
+  const filteredBlogs = insights.map((insight) => insight.node.name === blok.blog_one || insight.node.name === blok.blog_two)
+
+  console.log(filteredBlogs)
 
   return <DynamicBlogComponent />
 }
