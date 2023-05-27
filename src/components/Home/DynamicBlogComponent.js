@@ -7,7 +7,6 @@ const Components = {
   }
 
 const DynamicBlogComponent = ({ blok, slug }) => {
-    console.log(blok)
     if (
         typeof Components[blok.component] !== "undefined" &&
         blok.component === "insight_display"

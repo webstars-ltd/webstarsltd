@@ -30,7 +30,13 @@ const LandingPageBlogs = ({ blok }) => {
     <div className="container">
       <div className="row">
         {filteredBlogs.map((originalStory, index) => (
-          <BlogListComponent story={originalStory.node} key={index} />
+          <div
+            className="col-md-6 col-lg-6"
+            key={index}
+            id="undefined-content"
+          >
+            <BlogListComponent story={originalStory.node} key={index} />
+          </div>
         ))}
       </div>
     </div>
