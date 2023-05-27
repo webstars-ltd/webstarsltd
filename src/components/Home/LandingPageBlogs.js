@@ -1,5 +1,5 @@
 import React from 'react'
-import { useStaticQuery, graphql, StaticQuery } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 
 import DynamicBlogComponent from './DynamicBlogComponent'
 
