@@ -26,13 +26,15 @@ const LandingPageBlogs = ({ blok }) => {
 
   const filteredBlogs = insights.edges.filter((insight) => insight.node.name === blok.blog_one || insight.node.name === blok.blog_two)
 
-  console.log(filteredBlogs)
-
-  return <>
-  {filteredBlogs.map((originalStory, index) => (
-    <BlogListComponent story={originalStory.node} key={index} />
-  ))}
-</>
+  return <div className="insight-display ptb-40 insight-display-list">
+    <div className="container">
+      <div className="row">
+        {filteredBlogs.map((originalStory, index) => (
+          <BlogListComponent story={originalStory.node} key={index} />
+        ))}
+      </div>
+    </div>
+  </div>
 }
 
 export default LandingPageBlogs
