@@ -24,7 +24,7 @@ const LandingPageBlogs = ({ blok }) => {
   `)
 
 
-  const filteredBlogs = insights.edges.map((insight) => insight.node.name === blok.blog_one || insight.node.name === blok.blog_two)
+  const filteredBlogs = insights.edges.filter((insight) => insight.node.name === blok.blog_one || insight.node.name === blok.blog_two)
 
   console.log(filteredBlogs)
 
