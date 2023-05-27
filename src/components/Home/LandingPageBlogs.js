@@ -4,10 +4,10 @@ import { useStaticQuery, graphql } from "gatsby"
 const LandingPageBlogs = ({ blok }) => {
     console.log(blok)
 
-    let { story } = useStaticQuery(graphql`
+    let blog_one = useStaticQuery(graphql`
     query {
       story: allStoryblokEntry(
-        filter: { name: { eq: ${blog_one} } }
+        filter: { name: { eq: ${blok.blog_one} } }
       ) {
         edges {
           node {
@@ -23,7 +23,26 @@ const LandingPageBlogs = ({ blok }) => {
     }
   `)
 
-    console.log(story)
+    //   let blog_two = useStaticQuery(graphql`
+    //   query {
+    //     story: allStoryblokEntry(
+    //       filter: { name: { eq: ${blok.blog_two} } }
+    //     ) {
+    //       edges {
+    //         node {
+    //           field_component
+    //           slug
+    //           uuid
+    //           id
+    //           name
+    //           content
+    //         }
+    //       }
+    //     }
+    //   }
+    // `)
+
+    console.log(blog_one)
 
     return (
         <div>LandingPageBlogs</div>
