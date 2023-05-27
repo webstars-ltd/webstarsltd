@@ -1,15 +1,31 @@
 import React from 'react'
 import { useStaticQuery, graphql, StaticQuery } from "gatsby"
 
-import QueryComponent from './QueryComponent'
+import DynamicBlogComponent from './DynamicBlogComponent'
 
 const LandingPageBlogs = ({ blok }) => {
-    console.log(blok)
-    const title = blok.blog_one
+    let { insights } = useStaticQuery(graphql`
+    query {
+      insights: allStoryblokEntry(
+        filter: { field_component: { eq: "Single Insight" } }
+      ) {
+        edges {
+          node {
+            field_component
+            slug
+            uuid
+            id
+            name
+            content
+          }
+        }
+      }
+    }
+  `)
 
-    console.log(title)
+  console.log(insights)
 
-    return <QueryComponent title={title} />
+    return <DynamicBlogComponent  />
 }
 
 export default LandingPageBlogs
