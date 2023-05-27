@@ -7,7 +7,7 @@ const LandingPageBlogs = ({ blok }) => {
     let { story } = useStaticQuery(graphql`
     query {
       story: allStoryblokEntry(
-        filter: { field_component: { eq: "To Gate or Not to Gate?" } }
+        filter: { name: { eq: "To Gate or Not to Gate?" } }
       ) {
         edges {
           node {
