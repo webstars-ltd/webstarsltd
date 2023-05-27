@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import DynamicBlogComponent from './DynamicBlogComponent'
 
 const LandingPageBlogs = ({ blok }) => {
-    let { insights } = useStaticQuery(graphql`
+  let { insights } = useStaticQuery(graphql`
     query {
       insights: allStoryblokEntry(
         filter: { field_component: { eq: "Single Insight" } }
@@ -25,7 +25,7 @@ const LandingPageBlogs = ({ blok }) => {
 
   console.log(insights)
 
-    return <DynamicBlogComponent  />
+  return <DynamicBlogComponent />
 }
 
 export default LandingPageBlogs
