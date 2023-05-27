@@ -3,7 +3,6 @@ import DynamicComponent from "./DynamicComponent"
 import { storyblokEditable } from "@storyblok/js"
 
 const MainHome = ({ blok }) => {
-  console.log(blok)
   const content =
     blok.body &&
     blok.body.map(childBlok => (
