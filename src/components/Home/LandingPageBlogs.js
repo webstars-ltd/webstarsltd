@@ -1,7 +1,7 @@
 import React from 'react'
 import { useStaticQuery, graphql } from "gatsby"
 
-import DynamicBlogComponent from './DynamicBlogComponent'
+import BlogListComponent from './BlogListComponent'
 
 const LandingPageBlogs = ({ blok }) => {
   let { insights } = useStaticQuery(graphql`
@@ -28,7 +28,11 @@ const LandingPageBlogs = ({ blok }) => {
 
   console.log(filteredBlogs)
 
-  return <DynamicBlogComponent />
+  return <>
+  {filteredBlogs.map((originalStory, index) => (
+    <BlogListComponent story={originalStory.node} key={index} />
+  ))}
+</>
 }
 
 export default LandingPageBlogs
