@@ -7,6 +7,7 @@ import InsightDescription from "./InsightDescription"
 import MarketingGuide from "./Guide"
 import Text from "./Text"
 import SimilarInsights from "./SimilarInsights"
+import LandingPageBlogs from "../Home/LandingPageBlogs"
 
 const Components = {
   teaser_text: Banner,
@@ -15,6 +16,7 @@ const Components = {
   guide: MarketingGuide,
   bottom_text_copy: Text,
   show_insights_suggestions: SimilarInsights,
+  insights_suggestions: LandingPageBlogs
 }
 
 const DynamicComponent = ({ blok, url }) => {
