@@ -26,10 +26,6 @@ const LandingPageBlogs = ({ blok }) => {
 
   const filteredBlogs = insights.edges.filter((insight) => insight.node.name === blok.blog_one || insight.node.name === blok.blog_two)
 
-  console.log(filteredBlogs)
-  console.log(insights)
-  console.log(blok)
-
   return <div className="insight-display ptb-40 insight-display-list">
     <div className="container">
       <div className="row">
