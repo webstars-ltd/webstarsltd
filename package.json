@@ -30,7 +30,6 @@
     "gatsby-plugin-use-dark-mode": "^2.0.0",
     "gatsby-source-filesystem": "^4.15.0",
     "gatsby-source-storyblok": "^4.0.1",
-    "gatsby-transformer-sharp": "^4.15.0",
     "moment": "^2.29.4",
     "native-forms-react": "^1.9.55",
     "postcss-preset-env": "^7.7.2",
