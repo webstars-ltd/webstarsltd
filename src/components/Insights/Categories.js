@@ -2,7 +2,7 @@ import React from "react"
 import { storyblokEditable } from "@storyblok/js"
 
 import InsightList from "./InsightList"
-
+import { useStoryblok } from "../../utils/storyblok"
 const Categories = ({
   blok,
   setCategoryTitle,
