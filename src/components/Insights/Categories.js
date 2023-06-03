@@ -13,6 +13,21 @@ const Categories = ({
     if (title === categoryTitle) {
       setCategoryTitle("All")
       localStorage.setItem("title", "All")
+
+      const filtered = showMore && showMore.filter((story) => {
+        originalStory = useStoryblok(story)
+
+        const filteredStory = originalStory.content.body.filter(
+          childBlok =>
+            childBlok.component === "insight_display" &&
+            childBlok.insights[0].catgeory_name.length &&
+            childBlok.insights[0].catgeory_name.includes(categoryTitle)
+        )
+
+        return filteredStory
+      })
+
+      console.log(filtered)
     } else {
       setCategoryTitle(title)
       localStorage.setItem("title", title)

@@ -17,7 +17,6 @@ const ListComponent = ({ story, index, categoryTitle }) => {
       childBlok.insights[0].catgeory_name.includes(categoryTitle)
   )
 
-
   const content =
     originalStory.content.body &&
     filteredStory.map(childBlok => (
