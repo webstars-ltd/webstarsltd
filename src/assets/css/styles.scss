@@ -1908,6 +1908,31 @@ Home CSS
   color: #0e1828;
 }
 
+.policy-text h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  line-height: 46px;
+  letter-spacing: -0.5px;
+  color: #079c9e;
+  margin-bottom: 38px;
+}
+
+.policy-text h1 {
+  font-size: 36px;
+}
+
+.policy-text h2, h3, h4, h5, h6 {
+  font-size: 25px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  line-height: 46px;
+  letter-spacing: -0.5px;
+  color: #079c9e;
+  margin-bottom: 38px;
+}
+
 .singleInsightSec1-cont p.last {
   padding-bottom: 0;
 }
@@ -2179,7 +2204,7 @@ body.dark-mode {
     color: #777a7b;
   }
 
-  .singleInsightSec1-cont {
+  .singleInsightSec1-cont, .policy-text {
     img {
       margin-bottom: 20px;
     }
