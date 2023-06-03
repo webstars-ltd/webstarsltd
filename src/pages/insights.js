@@ -50,7 +50,6 @@ const Insights = () => {
       {/* Body Component Starts here */}
       <MainComponent
         blok={story.content}
-        updateViewMore={updateViewMore}
         showMore={insights.edges}
       />
       {/* Body Component Ends here */}
