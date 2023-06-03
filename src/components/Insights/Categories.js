@@ -19,6 +19,7 @@ const Categories = ({
     }
 
     const filtered = showMore && showMore.filter((story) => {
+      console.log(story)
       originalStory = useStoryblok(story.node)
       console.log(originalStory)
       // const filteredStory = originalStory.content.body.filter(
