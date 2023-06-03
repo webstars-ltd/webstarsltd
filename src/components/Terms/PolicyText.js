@@ -5,7 +5,7 @@ import { render, MARK_LINK } from "storyblok-rich-text-react-renderer"
 
 const Text = ({ blok }) => {
   return (
-    <div className="custom-container">
+    <div className="custom-container ptb-80">
       <div {...storyblokEditable(blok)}>
         <div className="policy-text">
           <h2>
