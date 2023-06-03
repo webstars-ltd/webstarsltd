@@ -549,13 +549,6 @@ Home CSS
   }
 }
 
-.policy-text-container {
-  padding: {
-    top: 200px !important;
-    bottom: 100px !important;
-  }
-}
-
 .home-banner-single-insight {
   width: 100%;
   max-width: 100%;
@@ -1915,58 +1908,50 @@ Home CSS
   color: #0e1828;
 }
 
-.singleInsightSec1-cont p span {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.6;
-  letter-spacing: 0.2px;
-  color: #fff !important;
-}
-
-.policy-text h1 {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  line-height: 46px;
-  letter-spacing: -0.5px;
-  color: #079c9e;
-  margin-bottom: 38px;
-}
-
-.policy-text h1 {
-  font-size: 36px;
-}
-
-.policy-text p, .policy-text p span, .policy-text ol li, .policy-text ul li {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.6;
-  padding-bottom: 12px;
-  letter-spacing: 0.2px;
-  color: #fff;
-}
-
-.policy-text ol li, .policy-text ul li {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.6;
-  letter-spacing: 0.2px;
-  color: #fff;
-}
-
-.policy-text h2, h3, h4, h5, h6 {
-  font-size: 25px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  line-height: 46px;
-  letter-spacing: -0.5px;
-  color: #079c9e;
-  margin-bottom: 38px;
-}
-
 .singleInsightSec1-cont p.last {
   padding-bottom: 0;
+}
+
+.policy-text {
+  h1 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: -0.5px;
+    color: #294f82;
+    margin-bottom: 38px;
+  }
+
+  h2, h3, h4, h5, h6 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 46px;
+    letter-spacing: -0.5px;
+    color: #294f82;
+    margin-bottom: 38px;
+  }
+
+  p, p span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    padding-bottom: 12px;
+    letter-spacing: 0.2px;
+    color: #0e1828;
+  }
+
+  ul li, ol li {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    padding-bottom: 3px;
+    letter-spacing: 0.2px;
+    color: #0e1828;
+  }
 }
 
 /*Insights Page Start*/
@@ -2207,6 +2192,7 @@ button#nf-submit-button {
   background-color: #fff;
 }
 
+
 body.light-mode {
   background-color: #fff !important;
   color: #333;
@@ -2236,7 +2222,7 @@ body.dark-mode {
     color: #777a7b;
   }
 
-  .singleInsightSec1-cont, .policy-text {
+  .singleInsightSec1-cont {
     img {
       margin-bottom: 20px;
     }
@@ -2248,9 +2234,11 @@ body.dark-mode {
     h6 {
       color: #079c9e;
     }
-    p, p span {
+    pz {
       color: #fff;
     }
+
+    
   }
 
   .singleInsightSec1-profile h6 {
