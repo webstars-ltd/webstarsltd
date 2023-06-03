@@ -1935,7 +1935,6 @@ Home CSS
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
-  padding-bottom: 12px;
   letter-spacing: 0.2px;
   color: #fff;
 }
@@ -2234,7 +2233,7 @@ body.dark-mode {
     h6 {
       color: #079c9e;
     }
-    p, span {
+    p, p span {
       color: #fff;
     }
   }
