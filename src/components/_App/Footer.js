@@ -87,7 +87,7 @@ const Footer = () => {
                 <ul>
                   <li>&copy; Webstars {new Date().getFullYear()}</li>
                   <li>
-                    <Link to="/privacy-policy">Privacy</Link>
+                    <Link to="/https://app.privasee.io/privacy-portal/63628705d67de9001332dd71" target="_blank">Privacy</Link>
                   </li>
                   <li>
                     <Link to="/terms-conditions">T&Cs</Link>
