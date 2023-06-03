@@ -20,15 +20,15 @@ const Categories = ({
 
     const filtered = showMore && showMore.filter((story) => {
       originalStory = useStoryblok(story)
+      console.log(originalStory)
+      // const filteredStory = originalStory.content.body.filter(
+      //   childBlok =>
+      //     childBlok.component === "insight_display" &&
+      //     childBlok.insights[0].catgeory_name.length &&
+      //     childBlok.insights[0].catgeory_name.includes(title)
+      // )
 
-      const filteredStory = originalStory.content.body.filter(
-        childBlok =>
-          childBlok.component === "insight_display" &&
-          childBlok.insights[0].catgeory_name.length &&
-          childBlok.insights[0].catgeory_name.includes(title)
-      )
-
-      return filteredStory
+      return story
     })
 
     console.log(filtered)
