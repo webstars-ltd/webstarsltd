@@ -2241,10 +2241,24 @@ body.dark-mode {
     h6 {
       color: #079c9e;
     }
-    pz {
+    p, p span {
       color: #fff;
     }
 
+
+.policy-text {
+  h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: #079c9e;
+    }
+    p, p span, ul li, ol {
+      color: #fff;
+    }
+}
     
   }
 
