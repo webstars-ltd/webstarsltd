@@ -6,7 +6,6 @@ import InsightList from "./InsightList"
 const Categories = ({
   blok,
   setCategoryTitle,
-  updateViewMore,
   categoryTitle,
   showMore,
 }) => {
@@ -14,7 +13,6 @@ const Categories = ({
     if (title === categoryTitle) {
       setCategoryTitle("All")
       localStorage.setItem("title", "All")
-      updateViewMore()
     } else {
       setCategoryTitle(title)
       localStorage.setItem("title", title)
