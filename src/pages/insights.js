@@ -39,14 +39,8 @@ const Insights = () => {
       }
     }
   `)
-  const [showMore, setShowMore] = useState(insights.edges.slice(0, 8))
 
   story = useStoryblok(story)
-
-  const updateViewMore = () => {
-    const copy = insights.edges.slice(0)
-    setShowMore(copy)
-  }
 
   return (
     // Main Layout Component
@@ -57,16 +51,8 @@ const Insights = () => {
       <MainComponent
         blok={story.content}
         updateViewMore={updateViewMore}
-        showMore={showMore}
-        setShowMore={setShowMore}
+        showMore={insights.edges}
       />
-      {showMore.length < 10 ? (
-        <div className="viewMoreParent">
-          <button onClick={updateViewMore} className="viewMoreBtn">
-            View More
-          </button>
-        </div>
-      ) : null}
       {/* Body Component Ends here */}
       <Footer />
     </Layout>

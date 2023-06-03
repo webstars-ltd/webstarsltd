@@ -8,7 +8,7 @@ const Components = {
   // show_insights_list: InsightList,
 }
 
-const DynamicComponent = ({ blok, showMore, setShowMore, updateViewMore }) => {
+const DynamicComponent = ({ blok, showMore, updateViewMore }) => {
   const [categoryTitle, setCategoryTitle] = useState("All")
 
   const changeCategory = title => {
@@ -32,7 +32,6 @@ const DynamicComponent = ({ blok, showMore, setShowMore, updateViewMore }) => {
         categoryTitle={categoryTitle}
         setCategoryTitle={changeCategory}
         showMore={showMore}
-        setShowMore={setShowMore}
       />
     )
   }

@@ -2,7 +2,7 @@ import React from "react"
 
 import ListComponent from "./ListComponent"
 
-const InsightLists = ({ showMore, categoryTitle, setShowMore }) => {
+const InsightLists = ({ showMore, categoryTitle }) => {
   return (
     <>
       <div className="insight-display ptb-40 insight-display-list">
@@ -18,7 +18,6 @@ const InsightLists = ({ showMore, categoryTitle, setShowMore }) => {
                   story={originalStory.node}
                   index={index}
                   categoryTitle={categoryTitle}
-                  setShowMore={setShowMore}
                 />
               </div>
             ))}

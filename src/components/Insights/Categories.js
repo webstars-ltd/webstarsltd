@@ -8,7 +8,6 @@ const Categories = ({
   setCategoryTitle,
   updateViewMore,
   categoryTitle,
-  setShowMore,
   showMore,
 }) => {
   const switchCategoryHandler = title => {
@@ -61,7 +60,6 @@ const Categories = ({
       <InsightList
         categoryTitle={categoryTitle}
         showMore={showMore}
-        setShowMore={setShowMore}
       />
     </div>
   )
