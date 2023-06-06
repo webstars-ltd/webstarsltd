@@ -36,11 +36,9 @@ const Footer = () => {
             <div className="footer_info">
               <h4>Contact Us</h4>
               <ul>
-              <li>
-                  <a href="tel:+44 20 7183 0058">
-                  020 7183 0058
-                  </a>
-                </li> 
+                <li>
+                  <a href="tel:+44 20 7183 0058">020 7183 0058</a>
+                </li>
                 <li>
                   <a href="mailto:hello@webstarsltd.com">
                     hello@webstarsltd.com
@@ -57,19 +55,41 @@ const Footer = () => {
               <h4>Follow Us</h4>
               <ul>
                 <li>
-                  <Link to="https://www.linkedin.com/company/webstars-ltd/" target="_blank">LinkedIn</Link>
+                  <Link
+                    to="https://www.linkedin.com/company/webstars-ltd/"
+                    target="_blank"
+                  >
+                    LinkedIn
+                  </Link>
                 </li>
                 <li>
-                  <Link to="https://twitter.com/WebstarsLtd" target="_blank">Twitter</Link>
+                  <Link to="https://twitter.com/WebstarsLtd" target="_blank">
+                    Twitter
+                  </Link>
                 </li>
                 <li>
-                  <Link to="https://www.facebook.com/webstarsltd" target="_blank">Facebook</Link>
+                  <Link
+                    to="https://www.facebook.com/webstarsltd"
+                    target="_blank"
+                  >
+                    Facebook
+                  </Link>
                 </li>
                 <li>
-                  <Link to="https://www.instagram.com/webstarsltd/" target="_blank">Instagram</Link>
+                  <Link
+                    to="https://www.instagram.com/webstarsltd/"
+                    target="_blank"
+                  >
+                    Instagram
+                  </Link>
                 </li>
                 <li>
-                  <Link to="https://www.youtube.com/@webstarsltd" target="_blank">Youtube</Link>
+                  <Link
+                    to="https://www.youtube.com/@webstarsltd"
+                    target="_blank"
+                  >
+                    Youtube
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -87,7 +107,12 @@ const Footer = () => {
                 <ul>
                   <li>&copy; Webstars {new Date().getFullYear()}</li>
                   <li>
-                    <Link to="/https://app.privasee.io/privacy-portal/63628705d67de9001332dd71" target="_blank">Privacy</Link>
+                    <Link
+                      to="https://app.privasee.io/privacy-portal/63628705d67de9001332dd71"
+                      target="_blank"
+                    >
+                      Privacy
+                    </Link>
                   </li>
                   <li>
                     <Link to="/terms-conditions">T&Cs</Link>
