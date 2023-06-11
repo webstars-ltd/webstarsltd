@@ -604,6 +604,10 @@ Home CSS
     .black {
       color: #2d2d2d;
     }
+
+    span {
+      color: #329999;
+    }
   }
 }
 
@@ -2318,6 +2322,9 @@ body.dark-mode {
   .home-banner-single-project {
     h1 {
       color: #079c9e;
+      span {
+        color: #079c9e;
+      }
       .black {
         color: #fff;
       }
