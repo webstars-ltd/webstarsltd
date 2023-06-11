@@ -620,6 +620,7 @@ Home CSS
     font-size: 20px;
     line-height: 27px;
     text-align: center;
+    color: "#0e1828";
   }
 }
 
@@ -2244,6 +2245,12 @@ body.dark-mode {
       .theme-color {
         color: #fff;
       }
+    }
+  }
+
+  .single-project-paragraph {
+    h1 p {
+      color: #fff;
     }
   }
 
