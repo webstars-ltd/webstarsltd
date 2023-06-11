@@ -542,7 +542,7 @@ Home CSS
   max-width: 80%;
   margin: 0 auto;
   text-align: left;
-  
+
   padding: {
     top: 140px;
     bottom: 100px;
@@ -586,8 +586,8 @@ Home CSS
   max-width: 100%;
 
   padding: {
-    top: 288px;
-    bottom: 128px;
+    top: 80px;
+    bottom: 40px;
   }
 
   h1 {
@@ -603,6 +603,13 @@ Home CSS
 
     .black {
       color: #2d2d2d;
+    }
+
+    p {
+      font-family: "Poppins";
+      font-size: 18px;
+      font-style: normal;
+      line-height: 27px;
     }
   }
 }
@@ -1431,7 +1438,7 @@ Home CSS
 .processSec1-r-cont p img {
   display: block;
   margin-left: auto;
-  margin-right: auto
+  margin-right: auto;
 }
 
 .processSec1-r-cont p a {
@@ -1931,7 +1938,11 @@ Home CSS
     margin-bottom: 20px;
   }
 
-  h2, h3, h4, h5, h6 {
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 600;
@@ -1942,7 +1953,8 @@ Home CSS
     margin-bottom: 15px;
   }
 
-  p, p span {
+  p,
+  p span {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
@@ -1951,7 +1963,8 @@ Home CSS
     color: #0e1828;
   }
 
-  ul li, ol li {
+  ul li,
+  ol li {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
@@ -1985,17 +1998,17 @@ Home CSS
 }
 
 .contactBtn {
-  background: #ECECEC;
-border-radius: 28px;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-color: #0E1828;
-border: none;
-margin-top: 15px;
-width: 140px;
-height: 40px;
+  background: #ececec;
+  border-radius: 28px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: #0e1828;
+  border: none;
+  margin-top: 15px;
+  width: 140px;
+  height: 40px;
 }
 
 .insights-Banner-btn ul li button {
@@ -2199,7 +2212,6 @@ button#nf-submit-button {
   background-color: #fff;
 }
 
-
 body.light-mode {
   background-color: #fff !important;
   color: #333;
@@ -2238,17 +2250,19 @@ body.dark-mode {
     h3,
     h4,
     h5,
-    h6, span, b span {
+    h6,
+    span,
+    b span {
       color: #079c9e !important;
     }
-    p, p span {
+    p,
+    p span {
       color: #fff !important;
     }
   }
 
-
-.policy-text {
-  h1,
+  .policy-text {
+    h1,
     h2,
     h3,
     h4,
@@ -2256,12 +2270,13 @@ body.dark-mode {
     h6 {
       color: #079c9e;
     }
-    p, p span, ul li, ol li {
+    p,
+    p span,
+    ul li,
+    ol li {
       color: #fff;
     }
-}
-    
-  
+  }
 
   .singleInsightSec1-profile h6 {
     color: #079c9e;
@@ -2288,6 +2303,10 @@ body.dark-mode {
       color: #079c9e;
       .black {
         color: #fff;
+      }
+
+      p {
+        font-size: 15px;
       }
     }
   }
