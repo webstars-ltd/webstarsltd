@@ -602,7 +602,7 @@ Home CSS
     letter-spacing: -0.472727px;
 
     .black {
-      color: #2d2d2d;
+      color: #2d2d2d !important;
     }
 
     span {
@@ -2321,12 +2321,8 @@ body.dark-mode {
 
   .home-banner-single-project {
     h1 {
-      color: #079c9e;
-      span {
-        color: #079c9e !important;
-      }
       .black {
-        color: #fff;
+        color: #fff !important;
       }
     }
   }
