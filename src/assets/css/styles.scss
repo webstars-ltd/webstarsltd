@@ -606,7 +606,7 @@ Home CSS
     }
 
     span {
-      color: #329999;
+      color: #329999 !important;
     }
   }
 }
@@ -2323,7 +2323,7 @@ body.dark-mode {
     h1 {
       color: #079c9e;
       span {
-        color: #079c9e;
+        color: #079c9e !important;
       }
       .black {
         color: #fff;
