@@ -586,8 +586,8 @@ Home CSS
   max-width: 100%;
 
   padding: {
-    top: 80px;
-    bottom: 40px;
+    top: 288px;
+    bottom: 128px;
   }
 
   h1 {
@@ -604,14 +604,21 @@ Home CSS
     .black {
       color: #2d2d2d;
     }
-
-    p {
-      font-family: "Poppins";
-      font-size: 18px;
-      font-style: normal;
-      line-height: 27px;
-    }
   }
+}
+
+.single-project-paragraph {
+  padding: {
+    top: 50px;
+    bottom: 50px;
+  }
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
 }
 
 .home-banner,
@@ -2304,11 +2311,16 @@ body.dark-mode {
       .black {
         color: #fff;
       }
-
-      p {
-        font-size: 15px;
-      }
     }
+  }
+
+  .single-project-paragraph {
+    padding: {
+      top: 30px;
+      bottom: 30px;
+    }
+
+    font-size: 18px;
   }
 
   .singl-project-sec2-cont h6 {

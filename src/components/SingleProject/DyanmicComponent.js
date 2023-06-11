@@ -8,6 +8,7 @@ import Solution from "./Solution"
 import SimilarProjectQuote from "./SimilarProjectQuote"
 import SimilarProjects from "./SimilarProjects"
 import Text from "./Text"
+import Paragrah from "./Paragraph"
 
 const Components = {
   "Summary Section": Summary,
@@ -15,6 +16,7 @@ const Components = {
   similar_project_card: SimilarProjectQuote,
   single_project_banner: BannerImage,
   single_project_banner_text: BannerText,
+  single_project_paragraph: Paragrah,
   single_project_solution: Solution,
   show_projects_suggestions: SimilarProjects,
 }
