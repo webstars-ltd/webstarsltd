@@ -6,7 +6,7 @@ const BannerText = ({ blok }) => {
   return (
     <div {...storyblokEditable(blok)}>
       <section class="home-banner-single-project">
-        <div class="custom-container">
+        <div class="container">
           <h1>
             {render(blok.banner_text, {
               markResolvers: {
