@@ -2,6 +2,7 @@ import React from "react"
 import { storyblokEditable } from "@storyblok/js"
 
 import { useStoryblok } from "../../utils/storyblok"
+import DynamicListComponent from "./DynamicListComponent"
 
 const TestFile = ({ story, index, categoryTitle }) => {
   let originalStory
@@ -30,8 +31,6 @@ const TestFile = ({ story, index, categoryTitle }) => {
       <div {...storyblokEditable(originalStory.content)}>{content}</div>
     )
   )
-
-  //   return <div {...storyblokEditable(originalStory.content)}>{content}</div>
 }
 
 export default TestFile
