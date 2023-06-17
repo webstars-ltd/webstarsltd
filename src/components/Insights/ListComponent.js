@@ -29,8 +29,13 @@ const ListComponent = ({ story, index, categoryTitle }) => {
     ))
 
   console.log(content)
-
-  return <div {...storyblokEditable(originalStory.content)}>{content}</div>
+  {
+    return !content.length ? (
+      <></>
+    ) : (
+      <div {...storyblokEditable(originalStory.content)}>{content}</div>
+    )
+  }
 }
 
 export default ListComponent
