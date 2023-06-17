@@ -1,14 +1,9 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { storyblokEditable } from "@storyblok/js"
 
 import InsightList from "./InsightList"
 import { useStoryblok } from "../../utils/storyblok"
-const Categories = ({
-  blok,
-  setCategoryTitle,
-  categoryTitle,
-  showMore,
-}) => {
+const Categories = ({ blok, setCategoryTitle, categoryTitle, showMore }) => {
   const switchCategoryHandler = title => {
     if (title === categoryTitle) {
       setCategoryTitle("All")
@@ -18,22 +13,31 @@ const Categories = ({
       localStorage.setItem("title", title)
     }
 
-    const filtered = showMore && showMore.filter((story) => {
-      console.log(story)
-      originalStory = useStoryblok(story.node)
-      console.log(originalStory)
-      // const filteredStory = originalStory.content.body.filter(
-      //   childBlok =>
-      //     childBlok.component === "insight_display" &&
-      //     childBlok.insights[0].catgeory_name.length &&
-      //     childBlok.insights[0].catgeory_name.includes(title)
-      // )
+    // const filtered = showMore && showMore.filter((story) => {
+    //   console.log(story)
+    //   originalStory = useStoryblok(story.node)
+    //   console.log(originalStory)
+    //   const filteredStory = originalStory.content.body.filter(
+    //     childBlok =>
+    //       childBlok.component === "insight_display" &&
+    //       childBlok.insights[0].catgeory_name.length &&
+    //       childBlok.insights[0].catgeory_name.includes(title)
+    //   )
 
-      return story
-    })
+    //   return story
+    // })
 
-    console.log(filtered)
+    // console.log(filtered)
   }
+
+  const filtereStory = () => {
+    originalStory = useStoryblok(story.node)
+    console.log(originalStory)
+  }
+
+  useEffect(() => {
+    filtereStory()
+  }, [categoryTitle])
 
   return (
     <div {...storyblokEditable(blok)}>
@@ -71,10 +75,7 @@ const Categories = ({
           </div>
         </div>
       </section>
-      <InsightList
-        categoryTitle={categoryTitle}
-        showMore={showMore}
-      />
+      <InsightList categoryTitle={categoryTitle} showMore={showMore} />
     </div>
   )
 }
