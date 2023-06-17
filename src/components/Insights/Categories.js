@@ -1,8 +1,9 @@
 import React, { useEffect } from "react"
 import { storyblokEditable } from "@storyblok/js"
 
-import InsightList from "./InsightList"
-import { useStoryblok } from "../../utils/storyblok"
+// import InsightList from "./InsightList"
+const InsightList = React.lazy(() => import("./InsightList"))
+
 const Categories = ({ blok, setCategoryTitle, categoryTitle, showMore }) => {
   const switchCategoryHandler = title => {
     if (title === categoryTitle) {
