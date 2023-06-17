@@ -11,25 +11,29 @@ const Summary = ({ blok }) => {
             <div class="col-md-6 pr-5">
               <div class="singl-project-sec2-cont">
                 <h6>{blok.summary_title}</h6>
-                {render(blok.summary_description, {
-                  markResolvers: {
-                    [MARK_BOLD]: (children, props) => {
-                      return <span className="black">{children}</span>
+                <p>
+                  {render(blok.summary_description, {
+                    markResolvers: {
+                      [MARK_BOLD]: (children, props) => {
+                        return <span className="black">{children}</span>
+                      },
                     },
-                  },
-                })}
+                  })}
+                </p>
               </div>
             </div>
             <div class="col-md-6 pl-5">
               <div class="singl-project-sec2-cont">
                 <h6>{blok.brief_title}</h6>
-                {render(blok.brief_description, {
-                  markResolvers: {
-                    [MARK_BOLD]: (children, props) => {
-                      return <span className="black">{children}</span>
+                <p>
+                  {render(blok.brief_description, {
+                    markResolvers: {
+                      [MARK_BOLD]: (children, props) => {
+                        return <span className="black">{children}</span>
+                      },
                     },
-                  },
-                })}
+                  })}
+                </p>
               </div>
             </div>
           </div>
