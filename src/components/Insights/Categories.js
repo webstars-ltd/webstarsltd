@@ -30,29 +30,29 @@ const Categories = ({ blok, setCategoryTitle, categoryTitle, showMore }) => {
     // console.log(filtered)
   }
 
-  const filtereStory = () => {
-    const filtered =
-      showMore &&
-      showMore.filter(story => {
-        console.log(story)
-        originalStory = useStoryblok(story.node)
-        console.log(originalStory)
+  // const filtereStory = () => {
+  //   const filtered =
+  //     showMore &&
+  //     showMore.filter(story => {
+  //       console.log(story)
+  //       originalStory = useStoryblok(story.node)
+  //       console.log(originalStory)
 
-        return {}
-        // const filteredStory = originalStory.content.body.filter(
-        //   childBlok =>
-        //     childBlok.component === "insight_display" &&
-        //     childBlok.insights[0].catgeory_name.length &&
-        //     childBlok.insights[0].catgeory_name.includes(title)
-        // )
+  //       return {}
+  //       // const filteredStory = originalStory.content.body.filter(
+  //       //   childBlok =>
+  //       //     childBlok.component === "insight_display" &&
+  //       //     childBlok.insights[0].catgeory_name.length &&
+  //       //     childBlok.insights[0].catgeory_name.includes(title)
+  //       // )
 
-        // return story
-      })
-  }
+  //       // return story
+  //     })
+  // }
 
-  useEffect(() => {
-    filtereStory()
-  }, [categoryTitle])
+  // useEffect(() => {
+  //   filtereStory()
+  // }, [categoryTitle])
 
   return (
     <div {...storyblokEditable(blok)}>
