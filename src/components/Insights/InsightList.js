@@ -1,6 +1,6 @@
 import React from "react"
 
-import ListComponent from "./ListComponent"
+// import ListComponent from "./ListComponent"
 import TestFile from "./testFile"
 
 const InsightLists = ({ showMore, categoryTitle }) => {
