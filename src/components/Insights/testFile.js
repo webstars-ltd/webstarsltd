@@ -25,13 +25,13 @@ const TestFile = ({ story, index, categoryTitle }) => {
       />
     ))
 
-  //   return (
-  //     content.length && (
-  //       <div {...storyblokEditable(originalStory.content)}>{content}</div>
-  //     )
-  //   )
+  return (
+    content.length && (
+      <div {...storyblokEditable(originalStory.content)}>{content}</div>
+    )
+  )
 
-  return <div {...storyblokEditable(originalStory.content)}>{content}</div>
+  //   return <div {...storyblokEditable(originalStory.content)}>{content}</div>
 }
 
 export default TestFile
