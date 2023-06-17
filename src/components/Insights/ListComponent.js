@@ -9,8 +9,6 @@ import DynamicListComponent from "./DynamicListComponent"
 const ListComponent = ({ story, index, categoryTitle }) => {
   let originalStory
   originalStory = useStoryblok(story)
-  console.log(originalStory)
-
   const filteredStory = originalStory.content.body.filter(
     childBlok =>
       childBlok.component === "insight_display" &&
@@ -29,6 +27,8 @@ const ListComponent = ({ story, index, categoryTitle }) => {
         categoryTitle={categoryTitle}
       />
     ))
+
+  console.log(content)
 
   return <div {...storyblokEditable(originalStory.content)}>{content}</div>
 }

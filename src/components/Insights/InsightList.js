@@ -3,7 +3,6 @@ import React from "react"
 import ListComponent from "./ListComponent"
 
 const InsightLists = ({ showMore, categoryTitle }) => {
-  console.log(showMore)
   return (
     <>
       <div className="insight-display ptb-40 insight-display-list">
