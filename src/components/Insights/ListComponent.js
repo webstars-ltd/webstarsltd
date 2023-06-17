@@ -9,6 +9,7 @@ import DynamicListComponent from "./DynamicListComponent"
 const ListComponent = ({ story, index, categoryTitle }) => {
   let originalStory
   originalStory = useStoryblok(story)
+  console.log(originalStory)
 
   const filteredStory = originalStory.content.body.filter(
     childBlok =>
