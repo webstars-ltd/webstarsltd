@@ -2,7 +2,7 @@ import React, { useEffect } from "react"
 import { storyblokEditable } from "@storyblok/js"
 
 // import InsightList from "./InsightList"
-const InsightList = React.lazy(() => import("./InsightList"))
+// const InsightList = React.lazy(() => import("./InsightList"))
 
 const Categories = ({ blok, setCategoryTitle, categoryTitle, showMore }) => {
   const switchCategoryHandler = title => {
@@ -91,7 +91,7 @@ const Categories = ({ blok, setCategoryTitle, categoryTitle, showMore }) => {
           </div>
         </div>
       </section>
-      <InsightList categoryTitle={categoryTitle} showMore={showMore} />
+      {/* <InsightList categoryTitle={categoryTitle} showMore={showMore} /> */}
     </div>
   )
 }
