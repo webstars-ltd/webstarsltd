@@ -14,23 +14,25 @@ const TestFile = ({ story, index, categoryTitle }) => {
       childBlok.insights[0].catgeory_name.includes(categoryTitle)
   )
 
-  const content =
-    originalStory.content.body &&
-    filteredStory.map(childBlok => (
-      <DynamicListComponent
-        blok={childBlok}
-        key={childBlok._uid}
-        slug={story.slug}
-        index={index}
-        categoryTitle={categoryTitle}
-      />
-    ))
+  return filteredStory
 
-  return (
-    content.length && (
-      <div {...storyblokEditable(originalStory.content)}>{content}</div>
-    )
-  )
+  //   const content =
+  //     originalStory.content.body &&
+  //     filteredStory.map(childBlok => (
+  //       <DynamicListComponent
+  //         blok={childBlok}
+  //         key={childBlok._uid}
+  //         slug={story.slug}
+  //         index={index}
+  //         categoryTitle={categoryTitle}
+  //       />
+  //     ))
+
+  //   return (
+  //     content.length && (
+  //       <div {...storyblokEditable(originalStory.content)}>{content}</div>
+  //     )
+  //   )
 }
 
 export default TestFile
