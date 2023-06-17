@@ -31,8 +31,23 @@ const Categories = ({ blok, setCategoryTitle, categoryTitle, showMore }) => {
   }
 
   const filtereStory = () => {
-    originalStory = useStoryblok(story.node)
-    console.log(originalStory)
+    const filtered =
+      showMore &&
+      showMore.filter(story => {
+        console.log(story)
+        originalStory = useStoryblok(story.node)
+        console.log(originalStory)
+
+        return {}
+        // const filteredStory = originalStory.content.body.filter(
+        //   childBlok =>
+        //     childBlok.component === "insight_display" &&
+        //     childBlok.insights[0].catgeory_name.length &&
+        //     childBlok.insights[0].catgeory_name.includes(title)
+        // )
+
+        // return story
+      })
   }
 
   useEffect(() => {
