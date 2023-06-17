@@ -1,5 +1,6 @@
 import React from "react"
 import { storyblokEditable } from "@storyblok/js"
+import { render, MARK_BOLD } from "storyblok-rich-text-react-renderer"
 
 const Summary = ({ blok }) => {
   return (
@@ -10,13 +11,25 @@ const Summary = ({ blok }) => {
             <div class="col-md-6 pr-5">
               <div class="singl-project-sec2-cont">
                 <h6>{blok.summary_title}</h6>
-                <p>{blok.summary_description}</p>
+                {render(blok.summary_description, {
+                  markResolvers: {
+                    [MARK_BOLD]: (children, props) => {
+                      return <span className="black">{children}</span>
+                    },
+                  },
+                })}
               </div>
             </div>
             <div class="col-md-6 pl-5">
               <div class="singl-project-sec2-cont">
                 <h6>{blok.brief_title}</h6>
-                <p>{blok.brief_description}</p>
+                {render(blok.brief_description, {
+                  markResolvers: {
+                    [MARK_BOLD]: (children, props) => {
+                      return <span className="black">{children}</span>
+                    },
+                  },
+                })}
               </div>
             </div>
           </div>
