@@ -23,7 +23,12 @@ const Insights = () => {
         content
       }
       insights: allStoryblokEntry(
-        filter: { field_component: { eq: "Single Insight" } }
+        filter: {
+          field_component: { eq: "Single Insight" }
+          filter_query: {
+            ATTRIBUTE: { OPERATION: "IN", VALUE: ["Google Analytics"] }
+          }
+        }
         sort: { order: DESC, fields: created_at }
       ) {
         edges {
@@ -40,6 +45,8 @@ const Insights = () => {
     }
   `)
 
+  console.log(insights)
+
   story = useStoryblok(story)
 
   return (
@@ -48,10 +55,7 @@ const Insights = () => {
       <SEO title="Insights" />
       <Navbar />
       {/* Body Component Starts here */}
-      <MainComponent
-        blok={story.content}
-        showMore={insights.edges}
-      />
+      <MainComponent blok={story.content} showMore={insights.edges} />
       {/* Body Component Ends here */}
       <Footer />
     </Layout>
