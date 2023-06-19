@@ -8,7 +8,7 @@ import Navbar from "../components/_App/Navbar"
 import Footer from "../components/_App/Footer"
 
 // Page level import statements
-import MainComponent from "../components/Insights/MainComponent"
+// import MainComponent from "../components/Insights/MainComponent"
 
 import { useStoryblok } from "../utils/storyblok"
 
@@ -48,7 +48,7 @@ const Insights = () => {
       <SEO title="Insights" />
       <Navbar />
       {/* Body Component Starts here */}
-      <MainComponent blok={story.content} showMore={insights.edges} />
+      {/* <MainComponent blok={story.content} showMore={insights.edges} /> */}
       {/* Body Component Ends here */}
       <Footer />
     </Layout>
