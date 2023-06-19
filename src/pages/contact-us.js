@@ -1,5 +1,5 @@
 import React, { useEffect } from "react"
-import NativeForms from "native-forms-react"
+// import NativeForms from "native-forms-react"
 
 // App level import statements
 import Layout from "../components/_App/Layout"
@@ -7,7 +7,7 @@ import SEO from "../components/_App/seo"
 import Navbar from "../components/_App/Navbar"
 import Footer from "../components/_App/Footer"
 
-// const NativeForms = React.lazy(() => import("native-forms-react"))
+const NativeForms = React.lazy(() => import("native-forms-react"))
 
 const ContactUs = () => {
   useEffect(() => {
@@ -27,15 +27,15 @@ const ContactUs = () => {
       <Navbar />
       {/* Body Component Starts here */}
       <div className="contact-us-container">
-        {/* <React.Suspense fallback={<></>}> */}
-        {(typeof window === "undefined" || !window.document) && (
-          <NativeForms
-            form="https://form.nativeforms.com/JZDdV1jZm80UPJnWH1Db"
-            onClose={result => console.log("on-close", result)}
-            onSend={result => console.log("on-send", result?.form?.completed)}
-          />
-        )}
-        {/* </React.Suspense> */}
+        <React.Suspense fallback={<></>}>
+          {(typeof window === "undefined" || !window.document) && (
+            <NativeForms
+              form="https://form.nativeforms.com/JZDdV1jZm80UPJnWH1Db"
+              onClose={result => console.log("on-close", result)}
+              onSend={result => console.log("on-send", result?.form?.completed)}
+            />
+          )}
+        </React.Suspense>
       </div>
       {/* Body Component Ends here */}
       <Footer />
