@@ -1,7 +1,7 @@
 import React from "react"
 
-import ListComponent from "./ListComponent"
-import TestFile from "./testFile"
+// import ListComponent from "./ListComponent"
+// import TestFile from "./testFile"
 
 const InsightLists = ({ showMore, categoryTitle }) => {
   return (
@@ -9,7 +9,7 @@ const InsightLists = ({ showMore, categoryTitle }) => {
       <div className="insight-display ptb-40 insight-display-list">
         <div className="container">
           <div className="row">
-            {showMore
+            {/* {showMore
               .filter((originalStory, index) => (
                 <TestFile
                   key={index}
@@ -27,7 +27,7 @@ const InsightLists = ({ showMore, categoryTitle }) => {
                   {item}
                   <ListComponent key={index} filteredStory={item} />
                 </div>
-              ))}
+              ))} */}
             {/* {showMore.map((originalStory, index) => (
               <div
                 className="col-md-6 col-lg-6"
