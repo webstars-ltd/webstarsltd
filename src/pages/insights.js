@@ -23,12 +23,7 @@ const Insights = () => {
         content
       }
       insights: allStoryblokEntry(
-        filter: {
-          field_component: { eq: "Single Insight" }
-          filter_query: {
-            ATTRIBUTE: { OPERATION: "IN", VALUE: ["Google Analytics"] }
-          }
-        }
+        filter: { field_component: { eq: "Single Insight" } }
         sort: { order: DESC, fields: created_at }
       ) {
         edges {
@@ -44,8 +39,6 @@ const Insights = () => {
       }
     }
   `)
-
-  console.log(insights)
 
   story = useStoryblok(story)
 
