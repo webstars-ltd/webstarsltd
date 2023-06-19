@@ -107,6 +107,15 @@ const Navbar = () => {
                     Team
                   </Link>
                 </li>
+                <li className="nav-item">
+                  <Link
+                    to="/contact-us"
+                    className="nav-link"
+                    activeClassName={"active"}
+                  >
+                    Contact Us
+                  </Link>
+                </li>
               </ul>
             </div>
           </nav>
