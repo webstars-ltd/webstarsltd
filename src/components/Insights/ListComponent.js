@@ -14,6 +14,8 @@ const ListComponent = ({ story, categoryTitle }) => {
       childBlok.insights[0].catgeory_name.includes(categoryTitle)
   )
 
+  console.log(story)
+
   const content = filteredStory.map((childBlok, index) => (
     <DynamicListComponent
       blok={childBlok}
