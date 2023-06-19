@@ -23,15 +23,11 @@ const ContactUs = () => {
         {/* Body Component Starts here */}
         <div className="contact-us-container">
           <React.Suspense fallback={<></>}>
-            {(typeof window === "undefined" || !window.document) && (
-              <NativeForms
-                form="https://form.nativeforms.com/JZDdV1jZm80UPJnWH1Db"
-                onClose={result => console.log("on-close", result)}
-                onSend={result =>
-                  console.log("on-send", result?.form?.completed)
-                }
-              />
-            )}
+            <NativeForms
+              form="https://form.nativeforms.com/JZDdV1jZm80UPJnWH1Db"
+              onClose={result => console.log("on-close", result)}
+              onSend={result => console.log("on-send", result?.form?.completed)}
+            />
           </React.Suspense>
         </div>
         {/* Body Component Ends here */}
