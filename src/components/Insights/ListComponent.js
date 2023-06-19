@@ -3,7 +3,7 @@ import React from "react"
 // Page level import statements
 import DynamicListComponent from "./DynamicListComponent"
 
-const ListComponent = ({ filteredStory }) => {
+const ListComponent = ({ story, categoryTitle }) => {
   let originalStory
   originalStory = useStoryblok(story)
   const filteredStory = originalStory.content.body.filter(
@@ -12,8 +12,6 @@ const ListComponent = ({ filteredStory }) => {
       childBlok.insights[0].catgeory_name.length &&
       childBlok.insights[0].catgeory_name.includes(categoryTitle)
   )
-
-  console.log(filteredStory)
 
   const content = filteredStory.map(childBlok => (
     <DynamicListComponent
