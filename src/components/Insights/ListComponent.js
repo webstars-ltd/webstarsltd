@@ -14,7 +14,7 @@ const ListComponent = ({ story, categoryTitle }) => {
       childBlok.insights[0].catgeory_name.includes(categoryTitle)
   )
 
-  console.log(story)
+  console.log(filteredStory)
 
   const content = filteredStory.map((childBlok, index) => (
     <DynamicListComponent
