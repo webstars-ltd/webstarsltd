@@ -13,11 +13,6 @@ import {
 } from "@fortawesome/free-brands-svg-icons"
 import { render } from "storyblok-rich-text-react-renderer"
 const NativeForms = React.lazy(() => import("native-forms-react"))
-// if (typeof window !== "undefined" || typeof window !== undefined) {
-//   import("native-forms-react").then((NativeForms) => {
-
-//   })
-// }
 
 const InsightDescription = ({ blok }) => {
   const [showPopup, setShowPopup] = useState(false)
@@ -107,7 +102,9 @@ const InsightDescription = ({ blok }) => {
                     <FontAwesomeIcon icon={faYoutube} />
                   </Link>
                 </div>
-                <button onClick={openModal} className="contactBtn">Contact Us</button>
+                <button onClick={openModal} className="contactBtn">
+                  Contact Us
+                </button>
               </div>
             </div>
             <div class="col-lg-8 col-md-8 col-sm-12">
