@@ -1,11 +1,9 @@
 import React, { useState } from "react"
 
 import Categories from "./Categories"
-import InsightList from "./InsightList"
 
 const Components = {
   categories: Categories,
-  // show_insights_list: InsightList,
 }
 
 const DynamicComponent = ({ blok, showMore }) => {
