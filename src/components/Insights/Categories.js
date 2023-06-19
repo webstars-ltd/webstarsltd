@@ -14,8 +14,6 @@ const Categories = ({ blok, setCategoryTitle, categoryTitle, showMore }) => {
     }
   }
 
-  console.log(showMore)
-
   return (
     <div {...storyblokEditable(blok)}>
       <section class="innerBanner all-insight-banner">

@@ -1,6 +1,6 @@
 import React from "react"
 
-// import ListComponent from "./ListComponent"
+import ListComponent from "./ListComponent"
 // import TestFile from "./testFile"
 
 const InsightLists = ({ showMore, categoryTitle }) => {
@@ -28,7 +28,7 @@ const InsightLists = ({ showMore, categoryTitle }) => {
                   <ListComponent key={index} filteredStory={item} />
                 </div>
               ))} */}
-            {/* {showMore.map((originalStory, index) => (
+            {showMore.map((originalStory, index) => (
               <div
                 className="col-md-6 col-lg-6"
                 key={index}
@@ -40,7 +40,7 @@ const InsightLists = ({ showMore, categoryTitle }) => {
                   categoryTitle={categoryTitle}
                 />
               </div>
-            ))} */}
+            ))}
           </div>
         </div>
       </div>
