@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import NativeForms from "native-forms-react"
 
 // App level import statements
@@ -10,6 +10,12 @@ import Footer from "../components/_App/Footer"
 // const NativeForms = React.lazy(() => import("native-forms-react"))
 
 const ContactUs = () => {
+  useEffect(() => {
+    if (typeof window === "undefined" || !window.document) {
+      return
+    }
+  }, [])
+
   return (
     <Layout>
       <SEO
