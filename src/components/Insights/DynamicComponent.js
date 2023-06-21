@@ -6,7 +6,7 @@ const Components = {
   categories: Categories,
 }
 
-const DynamicComponent = ({ blok, showMore, setInsights }) => {
+const DynamicComponent = ({ blok, showMore, setInsights, allInsights }) => {
   const [categoryTitle, setCategoryTitle] = useState("All")
 
   const changeCategory = title => {
@@ -17,7 +17,7 @@ const DynamicComponent = ({ blok, showMore, setInsights }) => {
       setCategoryTitle(title)
     }
 
-    const filteredData = showMore.filter(story => {
+    const filteredData = allInsights.filter(story => {
       if (
         story.content &&
         story.content.body &&

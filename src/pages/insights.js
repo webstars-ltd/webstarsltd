@@ -26,6 +26,7 @@ const Insights = () => {
 
   story = useStoryblok(story)
   const [insights, setInsights] = useState([])
+  const [allInsights, setAllInsights] = useState([])
 
   const fetchQuery = async () => {
     const {
@@ -35,6 +36,7 @@ const Insights = () => {
     })
 
     setInsights(stories.slice(1))
+    setAllInsights(stories.slice(1))
   }
 
   useEffect(() => {
@@ -51,6 +53,7 @@ const Insights = () => {
         blok={story.content}
         showMore={insights}
         setInsights={setInsights}
+        allInsights={allInsights}
       />
       {/* Body Component Ends here */}
       <Footer />
