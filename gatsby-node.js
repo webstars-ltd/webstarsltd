@@ -4,7 +4,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
 
   const projectTemplate = path.resolve("./src/templates/SingleProject.js")
-  // const insightTemplate = path.resolve("./src/templates/SingleInsight.js")
+  const insightTemplate = path.resolve("./src/templates/SingleInsight.js")
 
   const res = await graphql(`
     query {
@@ -42,13 +42,13 @@ exports.createPages = async ({ graphql, actions }) => {
     })
   })
 
-  // insightQueryResponse?.data?.allStoryblokEntry.edges.forEach(edge => {
-  //   createPage({
-  //     component: insightTemplate,
-  //     path: `/insights/${edge?.node?.slug}`,
-  //     context: {
-  //       slug: edge?.node?.slug,
-  //     },
-  //   })
-  // })
+  insightQueryResponse?.data?.allStoryblokEntry.edges.forEach(edge => {
+    createPage({
+      component: insightTemplate,
+      path: `/insights/${edge?.node?.slug}`,
+      context: {
+        slug: edge?.node?.slug,
+      },
+    })
+  })
 }

@@ -6,7 +6,7 @@ const Components = {
   categories: Categories,
 }
 
-const DynamicComponent = ({ blok, showMore }) => {
+const DynamicComponent = ({ blok, showMore, setInsights }) => {
   const [categoryTitle, setCategoryTitle] = useState("All")
 
   const changeCategory = title => {
@@ -16,6 +16,29 @@ const DynamicComponent = ({ blok, showMore }) => {
     } else {
       setCategoryTitle(title)
     }
+
+    const filteredData = showMore.filter(story => {
+      if (
+        story.content &&
+        story.content.body &&
+        Array.isArray(story.content.body) &&
+        story.content.body.some(item => {
+          return (
+            item.component === "insight_display" &&
+            item.insights &&
+            Array.isArray(item.insights) &&
+            item.insights.some(insight => {
+              return insight.catgeory_name.includes(title)
+            })
+          )
+        })
+      ) {
+        return true
+      }
+      return false
+    })
+
+    setInsights(filteredData)
   }
 
   if (typeof Components[blok.component] !== "undefined") {

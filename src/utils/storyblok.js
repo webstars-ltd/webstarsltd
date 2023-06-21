@@ -5,7 +5,7 @@ const sbConfig = config.plugins.find(
   item => item.resolve === "gatsby-source-storyblok"
 )
 
-storyblokInit({
+const { storyblokApi } = storyblokInit({
   accessToken: sbConfig.options.accessToken,
   use: [apiPlugin],
 })
@@ -33,3 +33,5 @@ export const useStoryblok = originalStory => {
 
   return story
 }
+
+export const StoryBlokApi = storyblokApi

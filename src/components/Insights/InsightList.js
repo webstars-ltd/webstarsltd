@@ -15,7 +15,7 @@ const InsightLists = ({ showMore, categoryTitle }) => {
                 id="undefined-content"
               >
                 <ListComponent
-                  story={originalStory.node}
+                  story={originalStory}
                   index={index}
                   categoryTitle={categoryTitle}
                 />

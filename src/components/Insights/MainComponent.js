@@ -4,7 +4,7 @@ import { storyblokEditable } from "@storyblok/js"
 // Page level import statements
 import DynamicComponent from "./DynamicComponent"
 
-const MainComponent = ({ blok, showMore }) => {
+const MainComponent = ({ blok, showMore, setInsights }) => {
   const content =
     blok.body &&
     blok.body.map(childBlok => (
@@ -12,6 +12,7 @@ const MainComponent = ({ blok, showMore }) => {
         blok={childBlok}
         key={childBlok._uid}
         showMore={showMore}
+        setInsights={setInsights}
       />
     ))
 

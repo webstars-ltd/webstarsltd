@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 // App level import statements
@@ -8,12 +8,11 @@ import Navbar from "../components/_App/Navbar"
 import Footer from "../components/_App/Footer"
 
 // Page level import statements
-// import MainComponent from "../components/Insights/MainComponent"
-
-import { useStoryblok } from "../utils/storyblok"
+import MainComponent from "../components/Insights/MainComponent"
+import { useStoryblok, StoryBlokApi } from "../utils/storyblok"
 
 const Insights = () => {
-  let { story, insights } = useStaticQuery(graphql`
+  let { story } = useStaticQuery(graphql`
     query {
       story: storyblokEntry(name: { eq: "Insights" }) {
         full_slug
@@ -22,25 +21,25 @@ const Insights = () => {
         id
         content
       }
-      insights: allStoryblokEntry(
-        filter: { field_component: { eq: "Single Insight" } }
-        sort: { order: DESC, fields: created_at }
-      ) {
-        edges {
-          node {
-            field_component
-            slug
-            uuid
-            id
-            name
-            content
-          }
-        }
-      }
     }
   `)
 
   story = useStoryblok(story)
+  const [insights, setInsights] = useState([])
+
+  const fetchQuery = async () => {
+    const {
+      data: { stories },
+    } = await StoryBlokApi.get("cdn/stories/", {
+      starts_with: "insights/",
+    })
+
+    setInsights(stories.slice(1))
+  }
+
+  useEffect(() => {
+    fetchQuery()
+  }, [])
 
   return (
     // Main Layout Component
@@ -48,7 +47,11 @@ const Insights = () => {
       <SEO title="Insights" />
       <Navbar />
       {/* Body Component Starts here */}
-      {/* <MainComponent blok={story.content} showMore={insights.edges} /> */}
+      <MainComponent
+        blok={story.content}
+        showMore={insights}
+        setInsights={setInsights}
+      />
       {/* Body Component Ends here */}
       <Footer />
     </Layout>
