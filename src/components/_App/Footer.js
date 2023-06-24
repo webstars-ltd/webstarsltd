@@ -111,14 +111,11 @@ const Footer = () => {
                       to="https://app.privasee.io/privacy-portal/63628705d67de9001332dd71"
                       target="_blank"
                     >
-                      Privacy
+                      Privacy & Cookies
                     </Link>
                   </li>
                   <li>
                     <Link to="/terms-conditions">T&Cs</Link>
-                  </li>
-                  <li>
-                    <Link to="/cookies">Cookies</Link>
                   </li>
                 </ul>
               </div>
