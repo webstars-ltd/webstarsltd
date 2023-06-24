@@ -28,7 +28,10 @@ const DynamicComponent = ({ blok, showMore, setInsights, allInsights }) => {
             item.insights &&
             Array.isArray(item.insights) &&
             item.insights.some(insight => {
-              return insight.catgeory_name.includes(title)
+              return (
+                insight.catgeory_name.includes(title) &&
+                insight.hidden !== "true"
+              )
             })
           )
         })

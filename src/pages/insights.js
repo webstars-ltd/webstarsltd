@@ -35,10 +35,31 @@ const Insights = () => {
       starts_with: "insights/",
     })
 
-    console.log(stories)
+    const updatedStories = stories.slice(1)
 
-    setInsights(stories.slice(1))
-    setAllInsights(stories.slice(1))
+    const filteredData = updatedStories.filter(story => {
+      if (
+        story.content &&
+        story.content.body &&
+        Array.isArray(story.content.body) &&
+        story.content.body.some(item => {
+          return (
+            item.component === "insight_display" &&
+            item.insights &&
+            Array.isArray(item.insights) &&
+            item.insights.some(insight => insight.hidden !== "true")
+          )
+        })
+      ) {
+        return true
+      }
+      return false
+    })
+
+    console.log(filteredData)
+
+    setInsights(filteredData)
+    setAllInsights(filteredData)
   }
 
   useEffect(() => {
