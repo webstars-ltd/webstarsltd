@@ -2187,7 +2187,7 @@ button#nf-submit-button {
 }
 
 .nf-powered-by-container {
-  display: none;
+  display: none !important;
 }
 
 .viewMoreParent {
@@ -2234,6 +2234,16 @@ button#nf-submit-button {
   background-color: #fff;
 }
 
+.nf-checkbox-label {
+  a {
+    color: #079c9e !important;
+
+    &:hover {
+      text-decoration: underline !important;
+    }
+  }
+}
+
 body.light-mode {
   background-color: #fff !important;
   color: #333;
@@ -2246,7 +2256,6 @@ body.dark-mode {
   transition: background-color 0.3s ease;
 
   .nf-questions-container,
-  .nf-powered-by-container,
   .wrapper-header-R1kc {
     background-color: #000 !important;
   }
