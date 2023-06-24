@@ -35,6 +35,8 @@ const Insights = () => {
       starts_with: "insights/",
     })
 
+    console.log(stories)
+
     setInsights(stories.slice(1))
     setAllInsights(stories.slice(1))
   }
