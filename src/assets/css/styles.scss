@@ -2245,6 +2245,12 @@ body.dark-mode {
   color: #999;
   transition: background-color 0.3s ease;
 
+  .nf-questions-container,
+  .nf-powered-by-container,
+  .wrapper-header-R1kc {
+    background-color: #000 !important;
+  }
+
   .home-banner,
   .home-banner-process,
   .home-banner-profile,
