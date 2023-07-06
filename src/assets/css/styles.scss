@@ -2221,7 +2221,18 @@ button#nf-submit-button {
   p {
     a {
       color: #389c9c !important;
-      text-decoration: underline;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      & span {
+        color: #389c9c !important;
+
+        &:hover {
+          text-decoration: underline !important;
+        }
+      }
     }
   }
 }
@@ -2301,6 +2312,24 @@ body.dark-mode {
     p,
     p span {
       color: #fff !important;
+    }
+
+    p {
+      a {
+        color: #389c9c !important;
+
+        &:hover {
+          text-decoration: underline;
+        }
+
+        & span {
+          color: #389c9c !important;
+
+          &:hover {
+            text-decoration: underline !important;
+          }
+        }
+      }
     }
   }
 
