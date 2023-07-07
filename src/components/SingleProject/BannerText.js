@@ -5,8 +5,8 @@ import { render, MARK_BOLD } from "storyblok-rich-text-react-renderer"
 const BannerText = ({ blok }) => {
   return (
     <div {...storyblokEditable(blok)}>
-      <section class="home-banner-single-project">
-        <div class="container">
+      <section className="home-banner-single-project">
+        <div className="container">
           <h1>
             {render(blok.banner_text, {
               markResolvers: {

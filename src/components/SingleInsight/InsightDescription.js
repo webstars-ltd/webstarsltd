@@ -53,12 +53,12 @@ const InsightDescription = ({ blok }) => {
         </React.Suspense>
       </Modal>
 
-      <section class="singleInsightSection2">
-        <div class="custom-container">
-          <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-12">
-              <div class="singleInsightSec1-profile">
-                <div class="singleInsightSec1-profile-img">
+      <section className="singleInsightSection2">
+        <div className="custom-container">
+          <div className="row">
+            <div className="col-lg-4 col-md-4 col-sm-12">
+              <div className="singleInsightSec1-profile">
+                <div className="singleInsightSec1-profile-img">
                   <img src={blok.user_img.filename} alt="" z />
                 </div>
 
@@ -107,8 +107,8 @@ const InsightDescription = ({ blok }) => {
                 </button>
               </div>
             </div>
-            <div class="col-lg-8 col-md-8 col-sm-12">
-              <div class="singleInsightSec1-cont">
+            <div className="col-lg-8 col-md-8 col-sm-12">
+              <div className="singleInsightSec1-cont">
                 <h6>{blok.title}</h6>
                 {render(blok.description_para)}
               </div>

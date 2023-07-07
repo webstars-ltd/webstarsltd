@@ -13,12 +13,12 @@ const Testimonial = ({ blok }) => {
   return (
     <>
       <div {...storyblokEditable(blok)}>
-        <section class="testimonialSection">
-          <div class="custom-container">
-            <div class="testiSec-main">
-              <div class="row">
-                <div class="col-lg-3 col-sm-12 col-md-6">
-                  <div class="testiSec-img">
+        <section className="testimonialSection">
+          <div className="custom-container">
+            <div className="testiSec-main">
+              <div className="row">
+                <div className="col-lg-3 col-sm-12 col-md-6">
+                  <div className="testiSec-img">
                     <img
                       src={blok.card[0].card[0].person_img.filename}
                       alt=""
@@ -26,8 +26,8 @@ const Testimonial = ({ blok }) => {
                   </div>
                 </div>
 
-                <div class="col-lg-8 col-sm-12 col-md-6">
-                  <div class="testiSec-cont">
+                <div className="col-lg-8 col-sm-12 col-md-6">
+                  <div className="testiSec-cont">
                     <h6>{blok.card[0].card[0].title}</h6>
                     {render(blok.card[0].card[0].text, {
                       markResolvers: {
@@ -38,7 +38,7 @@ const Testimonial = ({ blok }) => {
                       },
                     })}
 
-                    <ul class="mn-social-icon">
+                    <ul className="mn-social-icon">
                       <li>
                         <Link to={blok.card[0].card[0].facebook_profile_url}>
                           <FontAwesomeIcon icon={faFacebookSquare} />

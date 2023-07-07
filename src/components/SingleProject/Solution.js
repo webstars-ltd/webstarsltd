@@ -5,11 +5,11 @@ import { render, MARK_BOLD } from "storyblok-rich-text-react-renderer"
 const Solution = ({ blok }) => {
   return (
     <div {...storyblokEditable(blok)}>
-      <section class="single-projectSec3">
-        <div class="custom-container">
-          <div class="row align-items-stretch">
-            <div class="col-md-6">
-              <div class="singlproSec1-l-cont">
+      <section className="single-projectSec3">
+        <div className="custom-container">
+          <div className="row align-items-stretch">
+            <div className="col-md-6">
+              <div className="singlproSec1-l-cont">
                 {render(blok.section_title, {
                   markResolvers: {
                     [MARK_BOLD]: (children, props) => {
@@ -22,10 +22,10 @@ const Solution = ({ blok }) => {
               </div>
             </div>
 
-            <div class="col-md-6">
-              <div class="singlproSec1-r-cont">
+            <div className="col-md-6">
+              <div className="singlproSec1-r-cont">
                 {blok.stats_section.map(stats => (
-                  <div class="text-center" key={stats.stats_number}>
+                  <div className="text-center" key={stats.stats_number}>
                     <span>
                       <em>{stats.stats_number}</em>
                       <strong>{stats.stats_description}</strong>

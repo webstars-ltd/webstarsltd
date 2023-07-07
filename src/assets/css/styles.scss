@@ -1270,6 +1270,45 @@ Home CSS
   }
 }
 
+.image-collage {
+  margin-bottom: 100px;
+}
+
+.breakfast-text {
+  padding-top: 30px;
+  padding-bottom: 50px;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  a {
+    color: #079c9e;
+  }
+
+  p {
+    font-family: "Poppins";
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: -0.75px;
+    color: #777a7b;
+  }
+
+  .underline-style {
+    text-decoration-line: underline;
+    color: #329999;
+    transition: all 0.5s;
+
+    &:hover {
+      color: #777a7b;
+      cursor: pointer;
+    }
+  }
+}
+
 .testimonialSection {
   padding: 110px 0px;
 }

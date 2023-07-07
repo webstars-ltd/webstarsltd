@@ -16,18 +16,18 @@ const Categories = ({ blok, setCategoryTitle, categoryTitle, showMore }) => {
 
   return (
     <div {...storyblokEditable(blok)}>
-      <section class="innerBanner all-insight-banner">
-        <div class="container">
-          <div class="insights-Banner">
-            <div class="row">
-              <div class="col-md-2">
-                <div class="insights-Banner-cont">
+      <section className="innerBanner all-insight-banner">
+        <div className="container">
+          <div className="insights-Banner">
+            <div className="row">
+              <div className="col-md-2">
+                <div className="insights-Banner-cont">
                   <h6>{blok.title}</h6>
                 </div>
               </div>
 
-              <div class="col-md-10">
-                <div class="insights-Banner-btn">
+              <div className="col-md-10">
+                <div className="insights-Banner-btn">
                   <ul>
                     {blok.category_list.map(category => (
                       <li

@@ -20,15 +20,15 @@ const ProfilesList = ({ blok }) => {
                   className="col-lg-4 col-md-6 col-sm-12"
                   key={`${profileItem._uid}`}
                 >
-                  <div class="profileSec1-card">
-                    <div class="profileSec1-img">
+                  <div className="profileSec1-card">
+                    <div className="profileSec1-img">
                       <img src={profileItem.user_image.filename} alt="" />
                     </div>
 
                     <h6>{profileItem.user_name}</h6>
                     <p>{profileItem.user_role}</p>
 
-                    <ul class="mn-social-icon">
+                    <ul className="mn-social-icon">
                       {profileItem.user_social_profile.map(socialProfile => (
                         <li>
                           <Link

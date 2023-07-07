@@ -5,11 +5,11 @@ import { render, MARK_BOLD } from "storyblok-rich-text-react-renderer"
 const Summary = ({ blok }) => {
   return (
     <div {...storyblokEditable(blok)}>
-      <section class="single-projectSec2">
-        <div class="custom-container">
-          <div class="row">
-            <div class="col-md-6 pr-5">
-              <div class="singl-project-sec2-cont">
+      <section className="single-projectSec2">
+        <div className="custom-container">
+          <div className="row">
+            <div className="col-md-6 pr-5">
+              <div className="singl-project-sec2-cont">
                 <h6>{blok.summary_title}</h6>
                 <p>
                   {render(blok.summary_description, {
@@ -22,8 +22,8 @@ const Summary = ({ blok }) => {
                 </p>
               </div>
             </div>
-            <div class="col-md-6 pl-5">
-              <div class="singl-project-sec2-cont">
+            <div className="col-md-6 pl-5">
+              <div className="singl-project-sec2-cont">
                 <h6>{blok.brief_title}</h6>
                 <p>
                   {render(blok.brief_description, {

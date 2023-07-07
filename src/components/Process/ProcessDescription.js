@@ -7,11 +7,11 @@ const ProcessDescription = ({ blok }) => {
   return (
     <div {...storyblokEditable(blok)}>
       {blok.process_sayings ? (
-        <section class="processSection1">
-          <div class="custom-container">
-            <div class="row align-items-center">
-              <div class="col-sm-12 col-md-6 col-lg-6">
-                <div class="processSec1-r-cont">
+        <section className="processSection1">
+          <div className="custom-container">
+            <div className="row align-items-center">
+              <div className="col-sm-12 col-md-6 col-lg-6">
+                <div className="processSec1-r-cont">
                   {render(blok.process_details, {
                     markResolvers: {
                       [MARK_LINK]: (children, props) => {
@@ -23,8 +23,8 @@ const ProcessDescription = ({ blok }) => {
                 </div>
               </div>
 
-              <div class="col-sm-12 col-md-6 col-lg-6">
-                <div class="processSec1-l-cont">
+              <div className="col-sm-12 col-md-6 col-lg-6">
+                <div className="processSec1-l-cont">
                   <h6>“{blok.process_sayings}”</h6>
                 </div>
               </div>
@@ -32,11 +32,11 @@ const ProcessDescription = ({ blok }) => {
           </div>
         </section>
       ) : (
-        <section class="processSection1-full">
-          <div class="custom-container">
-            <div class="row align-items-center">
-              <div class="col-sm-12 col-md-12 col-lg-12">
-                <div class="processSec1-r-cont">
+        <section className="processSection1-full">
+          <div className="custom-container">
+            <div className="row align-items-center">
+              <div className="col-sm-12 col-md-12 col-lg-12">
+                <div className="processSec1-r-cont">
                   {render(blok.process_details, {
                     markResolvers: {
                       [MARK_LINK]: (children, props) => {

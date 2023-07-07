@@ -38,7 +38,7 @@ const SimilarInsights = ({ url }) => {
   const storyToSuggestCopyTwo = useStoryblok(storyToSuggest[1])
 
   return (
-    <div class="container" style={{ marginBottom: 50 }}>
+    <div className="container" style={{ marginBottom: 50 }}>
       <div className="row">
         <div className="col-lg-6">
           <InsightLists
