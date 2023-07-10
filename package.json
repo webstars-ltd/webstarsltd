@@ -42,7 +42,6 @@
     "react-helmet": "^6.1.0",
     "react-modal": "^3.15.1",
     "react-notifications": "^1.7.4",
-    "react-photo-collage": "^1.0.9",
     "react-toastify": "^9.0.8",
     "sass": "^1.52.1",
     "storyblok-rich-text-react-renderer": "^2.6.0",

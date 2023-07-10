@@ -9,6 +9,7 @@ $value_four: 991px;
 $value_five: 992px;
 $value_six: 1199px;
 $value_seven: 1550px;
+$value_eight: 480px;
 
 /* Max width 767px */
 @media only #{$media} and ($feature_max : $value_two) {
@@ -373,6 +374,25 @@ $value_seven: 1550px;
         background: #ffffff;
       }
     }
+  }
+}
+
+@media (max-width: $value_four) {
+  .gallery {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+}
+
+@media (max-width: $value_eight) {
+  .gallery {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%;
   }
 }
 
