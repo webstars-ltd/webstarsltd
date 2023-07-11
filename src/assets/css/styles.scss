@@ -1350,9 +1350,39 @@ Home CSS
   h3,
   h4,
   h5,
+  h6 {
+    margin: 40px 0px 20px 0px !important;
+    text-align: center;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
   h6,
   a {
     color: #079c9e;
+
+    span {
+      color: #079c9e !important;
+    }
+
+    p {
+      color: #777a7b !important;
+
+      a {
+        color: #079c9e !important;
+
+        span {
+          color: #079c9e !important;
+        }
+      }
+
+      span {
+        color: #777a7b !important;
+      }
+    }
   }
 
   p {
@@ -2375,6 +2405,67 @@ body.dark-mode {
   .nf-questions-container,
   .wrapper-header-R1kc {
     background-color: #000 !important;
+  }
+
+  .breakfast-text {
+    padding-top: 30px;
+    padding-bottom: 50px;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    a {
+      color: #079c9e;
+
+      b {
+        span {
+          color: #079c9e;
+        }
+      }
+
+      span {
+        color: #079c9e;
+      }
+
+      p {
+        color: #777a7b !important;
+
+        a {
+          color: #079c9e !important;
+
+          span {
+            color: #079c9e !important;
+          }
+        }
+
+        span {
+          color: #777a7b !important;
+        }
+      }
+    }
+
+    p {
+      font-family: "Poppins";
+      font-weight: normal;
+      font-size: 18px;
+      text-align: center;
+      letter-spacing: -0.75px;
+      color: #777a7b;
+    }
+
+    .underline-style {
+      text-decoration-line: underline;
+      color: #329999;
+      transition: all 0.5s;
+
+      &:hover {
+        color: #777a7b;
+        cursor: pointer;
+      }
+    }
   }
 
   .home-banner,
