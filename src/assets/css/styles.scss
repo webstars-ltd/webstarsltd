@@ -1271,14 +1271,14 @@ Home CSS
 }
 
 .gallery {
-  -webkit-column-count: 3;
-  -moz-column-count: 3;
-  column-count: 3;
-  -webkit-column-width: 33%;
-  -moz-column-width: 33%;
-  column-width: 33%;
-  padding: 0 12px;
-  margin-bottom: 100px;
+  -webkit-column-count: 3 !important;
+  -moz-column-count: 3 !important;
+  column-count: 3 !important;
+  -webkit-column-width: 33% !important;
+  -moz-column-width: 33% !important;
+  column-width: 33% !important;
+  padding: 0 12px !important;
+  margin-bottom: 100px !important;
 }
 
 .gallery .photo {
