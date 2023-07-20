@@ -8,14 +8,14 @@ import Navbar from "../components/_App/Navbar"
 import Footer from "../components/_App/Footer"
 
 // // Project Page components import statements
-import BreakfastsMain from "../components/Breakfasts/BreakfastsMain"
+import EventsMain from "../components/Events/EventsMain"
 
 import { useStoryblok } from "../utils/storyblok"
 
-const Breakfasts = () => {
+const Events = () => {
   let { story } = useStaticQuery(graphql`
     query {
-      story: storyblokEntry(name: { eq: "Breakfasts" }) {
+      story: storyblokEntry(name: { eq: "Events" }) {
         full_slug
         name
         uuid
@@ -30,14 +30,14 @@ const Breakfasts = () => {
   return (
     // Main Layout Component
     <Layout>
-      <SEO title="Breakfasts" />
+      <SEO title="Events" />
       <Navbar />
       {/* Body Component Starts here */}
-      <BreakfastsMain blok={story.content} />
+      <EventsMain blok={story.content} />
       {/* Body Component Ends here */}
       <Footer />
     </Layout>
   )
 }
 
-export default Breakfasts
+export default Events

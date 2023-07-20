@@ -100,11 +100,11 @@ const Navbar = () => {
 
                 <li className="nav-item">
                   <Link
-                    to="/breakfasts"
+                    to="/events"
                     className="nav-link"
                     activeClassName={"active"}
                   >
-                    Breakfasts
+                    Events
                   </Link>
                 </li>
 
