@@ -29,7 +29,7 @@ const MarketingGuide = ({ blok }) => {
                     </h4>
                     <a
                       className="btn btn-download"
-                      href={a.file.filename}
+                      href={blok.file.filename}
                       target="_blank"
                     >
                       Download
