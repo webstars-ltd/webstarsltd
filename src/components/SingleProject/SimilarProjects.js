@@ -36,9 +36,9 @@ const SimilarProjects = ({ url }) => {
     }
   })
 
-  // if (storyToSuggest.length) {
-  //   storyToSuggestCopyOne = useStoryblok(storyToSuggest[0])
-  // }
+  if (storyToSuggest.length) {
+    storyToSuggestCopyOne = useStoryblok(storyToSuggest[0])
+  }
 
   return storyToSuggest.length ? (
     <>
