@@ -1,6 +1,7 @@
 import React from "react"
-import DynamicComponent from "./DynamicComponent"
 import { storyblokEditable } from "@storyblok/js"
+
+import DynamicComponent from "./DynamicComponent"
 
 const MainHome = ({ blok }) => {
   const content =
