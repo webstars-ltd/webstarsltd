@@ -1197,8 +1197,10 @@ Home CSS
       }
     }
 
-    a {
-      display: block;
+    .downloadable-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       background-color: #ececec;
 
       margin: {
@@ -1209,20 +1211,26 @@ Home CSS
       bottom: 45px;
       width: 160px;
       height: 56px;
+      line-height: 32px;
       border-radius: 50px;
       font-family: "Poppins";
       font-style: normal;
       font-weight: 600;
       font-size: 15px;
-      line-height: 20px;
       text-align: center;
       letter-spacing: 0.2px;
-      color: #2d2d2d;
       transition: all $transition;
+
+      a {
+        color: #2d2d2d;
+
+        &:hover {
+          color: #dbccd0;
+        }
+      }
 
       &:hover {
         background-color: transparent;
-        color: #dbccd0;
         border: 1px solid #dbccd0;
       }
     }
