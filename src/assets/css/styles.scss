@@ -2288,18 +2288,26 @@ Home CSS
   background-color: #294f8299 !important;
   z-index: 9999;
 }
-
+// label
 .nf-inputs-wrapper.wrapper-contact-R1kc span {
   font-family: "Poppins" !important;
-  color: #8d8d8d !important;
+  color: #000 !important;
   font-weight: 400 !important;
+
+  & .nf-input-required {
+    color: red !important;
+  }
+}
+
+.nf-checkbox-label span.nf-input-required {
+  color: red !important;
 }
 
 .nf-input {
   color: #0e1828 !important;
-  background-color: #f6f6f6 !important;
-  border: 0px !important;
-  -webkit-text-fill-color: #000 !important;
+  background-color: #fff !important;
+  border-color: rgb(206, 214, 221) !important;
+  -webkit-text-fill-color: #8d8d8d !important;
   font-family: "Poppins";
 }
 
@@ -2413,6 +2421,10 @@ body.dark-mode {
   .nf-questions-container,
   .wrapper-header-R1kc {
     background-color: #000 !important;
+  }
+
+  .nf-inputs-wrapper.wrapper-contact-R1kc span {
+    color: #fff !important;
   }
 
   .breakfast-text {
