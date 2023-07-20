@@ -27,7 +27,13 @@ const MarketingGuide = ({ blok }) => {
                       <span className="d-block">{blok.Title_White}</span>{" "}
                       {blok.Title_Cyan}
                     </h4>
-                    <button className="btn btn-download">Download</button>
+                    <a
+                      className="btn btn-download"
+                      href={a.file.filename}
+                      target="_blank"
+                    >
+                      Download
+                    </a>
                   </div>
                 </div>
                 <div className="col-md-6 col-lg-6">
