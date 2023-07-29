@@ -9,7 +9,11 @@ const Navbar = () => {
   const [menu, setMenu] = React.useState(true)
   const darkModeActual = useDarkMode(false)
   const [value, setValue] = React.useState(
-    darkModeActual.value ? darkModeActual.value : true
+    darkModeActual.value === undefined
+      ? false
+      : darkModeActual.value
+      ? darkModeActual.value
+      : true
   )
 
   const toggleNavbar = () => {
@@ -36,7 +40,6 @@ const Navbar = () => {
         setValue(dark)
       } else {
         localStorage.setItem("darkMode", JSON.stringify(value))
-        setValue(value)
       }
     }
   }, [darkModeActual.value])
