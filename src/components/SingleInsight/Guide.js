@@ -26,7 +26,15 @@ const Guide = ({ blok }) => {
                     </span>{" "}
                     {blok.marketing_guide[0].Title_Cyan}
                   </h4>
-                  <button className="btn btn-download">Download</button>
+                  <div className="downloadable-btn">
+                    <a
+                      className="btn btn-download"
+                      href={blok.file?.filename}
+                      target="_blank"
+                    >
+                      Download
+                    </a>
+                  </div>
                 </div>
               </div>
               <div className="col-md-6 col-lg-6">
