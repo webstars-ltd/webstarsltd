@@ -128,11 +128,11 @@ const Navbar = () => {
                 </li>
                 <li className="nav-item">
                   <Link
-                    to="/contact-us"
+                    to="/contact"
                     className="nav-link"
                     activeClassName={"active"}
                   >
-                    Contact Us
+                    Contact
                   </Link>
                 </li>
               </ul>

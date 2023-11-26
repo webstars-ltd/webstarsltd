@@ -16,7 +16,7 @@ const Components = {
   guide: MarketingGuide,
   bottom_text_copy: Text,
   // show_insights_suggestions: SimilarInsights,
-  insights_suggestions: LandingPageBlogs
+  insights_suggestions: LandingPageBlogs,
 }
 
 const DynamicComponent = ({ blok, url }) => {

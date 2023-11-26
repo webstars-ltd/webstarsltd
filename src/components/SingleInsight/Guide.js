@@ -2,6 +2,7 @@ import React from "react"
 import { storyblokEditable } from "@storyblok/js"
 
 const Guide = ({ blok }) => {
+  console.log(blok)
   return (
     <div {...storyblokEditable(blok)}>
       <div className="single-insight-guide">
@@ -29,7 +30,7 @@ const Guide = ({ blok }) => {
                   <div className="downloadable-btn">
                     <a
                       className="btn btn-download"
-                      href={blok.file?.filename}
+                      href={blok.marketing_guide[0].file?.filename}
                       target="_blank"
                     >
                       Download

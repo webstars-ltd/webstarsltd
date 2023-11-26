@@ -2,8 +2,6 @@ import React from "react"
 import { storyblokEditable } from "@storyblok/js"
 
 const MarketingGuide = ({ blok }) => {
-  console.log(blok)
-
   return (
     <>
       <div {...storyblokEditable(blok)}>

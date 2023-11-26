@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faFacebookSquare,
   faLinkedin,
-  faTwitter,
+  faSquareXTwitter,
 } from "@fortawesome/free-brands-svg-icons"
 
 const ProfilesList = ({ blok }) => {
@@ -43,7 +43,7 @@ const ProfilesList = ({ blok }) => {
                                   ? faLinkedin
                                   : socialProfile.Title === "Facebook"
                                   ? faFacebookSquare
-                                  : faTwitter
+                                  : faSquareXTwitter
                               }
                             />
                           </Link>

@@ -7,7 +7,7 @@ import moment from "moment"
 import {
   faFacebookSquare,
   faLinkedin,
-  faTwitter,
+  faSquareXTwitter,
   faInstagram,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons"
@@ -78,7 +78,7 @@ const InsightDescription = ({ blok }) => {
                     className="profile-fb"
                     target="_blank"
                   >
-                    <FontAwesomeIcon icon={faTwitter} />
+                    <FontAwesomeIcon icon={faSquareXTwitter} />
                   </Link>
                   <Link
                     to={"https://www.instagram.com/webstarsltd/"}

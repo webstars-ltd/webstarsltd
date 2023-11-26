@@ -14,7 +14,7 @@ const ContactUs = () => {
     return (
       <Layout>
         <SEO
-          title="Contact Us"
+          title="Contact"
           description={
             "Webstars are experts in everything digital - from design and development, to strategy and ongoing support, we are a full-service agency here to bring your digital aspirations to life."
           }

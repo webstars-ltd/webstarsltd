@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faFacebookSquare,
   faLinkedin,
-  faTwitter,
+  faSquareXTwitter,
 } from "@fortawesome/free-brands-svg-icons"
 
 const Testimonial = ({ blok }) => {
@@ -53,7 +53,7 @@ const Testimonial = ({ blok }) => {
 
                       <li>
                         <Link to={blok.card[0].card[0].twitter_profile_url}>
-                          <FontAwesomeIcon icon={faTwitter} />
+                          <FontAwesomeIcon icon={faSquareXTwitter} />
                         </Link>
                       </li>
                     </ul>
