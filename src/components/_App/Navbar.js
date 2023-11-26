@@ -82,12 +82,6 @@ const Navbar = () => {
             <div className={classOne} id="navbarSupportedContent">
               <ul className="navbar-nav ms-auto">
                 <li className="nav-item">
-                  <Link to="/process" className="nav-link">
-                    Process
-                  </Link>
-                </li>
-
-                <li className="nav-item">
                   <Link
                     to="/projects"
                     className="nav-link"
@@ -109,11 +103,11 @@ const Navbar = () => {
 
                 <li className="nav-item">
                   <Link
-                    to="/events"
+                    to="/about"
                     className="nav-link"
                     activeClassName={"active"}
                   >
-                    Events
+                    About
                   </Link>
                 </li>
 
