@@ -16,7 +16,6 @@ const SingleProject = ({ data }) => {
   let storyParse = data.story
 
   const story = useStoryblok(storyParse)
-  console.log(story)
 
   return (
     // Main Layout Component

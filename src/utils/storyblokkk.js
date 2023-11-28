@@ -19,7 +19,6 @@ export const useStoryblok = originalStory => {
   const modifiedId = storyCopy.id.split("-")
   storyCopy.id = parseInt(modifiedId[1])
 
-  console.log(storyCopy.id)
   let [story, setStory] = useState(storyCopy)
 
   const BlokBrigdeConf = () => {

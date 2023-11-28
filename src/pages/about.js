@@ -27,8 +27,6 @@ const About = () => {
 
   story = useStoryblok(story)
 
-  console.log(story)
-
   return (
     // Main Layout Component
     <Layout>

@@ -56,8 +56,6 @@ const Insights = () => {
       return false
     })
 
-    console.log(filteredData)
-
     setInsights(filteredData)
     setAllInsights(filteredData)
   }
