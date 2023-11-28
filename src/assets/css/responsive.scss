@@ -382,6 +382,14 @@ $value_eight: 480px;
   }
 }
 
+@media (max-width: $value_two) {
+  .marketing-guide {
+    .row {
+      flex-direction: column-reverse !important;
+    }
+  }
+}
+
 @media (max-width: $value_four) {
   .gallery {
     -webkit-column-count: 2;
