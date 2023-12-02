@@ -387,6 +387,11 @@ $value_eight: 480px;
     max-width: 85%;
     margin: 0 auto;
   }
+  .insight-display-list {
+    .row > * {
+      padding-right: 0px !important;
+    }
+  }
   .insights-link-space {
     width: 100%;
 
