@@ -9,7 +9,7 @@ const BannerImage = ({ blok }) => {
         <div className="custom-container">
           {blok && blok.wistia_video_id ? (
             <WistiaProvider>
-              <WistiaPlayer hashedId={blok.wistia_video_id} />
+              <WistiaPlayer hashedId={blok.wistia_video_id} autoPlay />
             </WistiaProvider>
           ) : (
             <div className="singl-project-sec1-img">
