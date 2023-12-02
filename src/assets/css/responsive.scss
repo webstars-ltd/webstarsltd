@@ -383,6 +383,20 @@ $value_eight: 480px;
 }
 
 @media (max-width: $value_two) {
+  .singleInsightSec1-cont {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .insights-link-space {
+    width: 100%;
+
+    .insight-display-one-img {
+      width: 80%;
+    }
+  }
+  .singleInsightSection2 .row .col-lg-8:last-child {
+    padding-left: 0px !important;
+  }
   .marketing-guide {
     .row {
       flex-direction: column-reverse !important;

@@ -5,7 +5,11 @@ const InsightLists = ({ blok, slug, index }) => {
   return (
     <>
       {
-        <Link to={`/insights/${slug}`} style={{ marginBottom: 50 }}>
+        <Link
+          to={`/insights/${slug}`}
+          style={{ marginBottom: 50 }}
+          className="insights-link-space"
+        >
           <div
             className={
               index % 2 === 0 ? `insight-display-one` : `insight-display-two`
