@@ -246,7 +246,8 @@ $value_eight: 480px;
 
     &-one,
     &-two {
-      padding: 50px 20px 0px 50px;
+      // padding: 50px 20px 0px 50px;
+      padding: 50px 20px 0px 20px;
 
       h6,
       h4 {
@@ -509,7 +510,7 @@ $value_eight: 480px;
       width: 100%;
 
       h4 {
-        max-width: 500px;
+        // max-width: 20px;
       }
     }
 
@@ -518,9 +519,9 @@ $value_eight: 480px;
       width: 100%;
       height: 459px;
 
-      h4 {
-        max-width: 500px;
-      }
+      // h4 {
+      //   max-width: 500px;
+      // }
     }
   }
 
