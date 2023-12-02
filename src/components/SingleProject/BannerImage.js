@@ -1,15 +1,25 @@
-import React from "react"
+import React, { useState } from "react"
 import { storyblokEditable } from "@storyblok/js"
 import { WistiaProvider, WistiaPlayer } from "@wistia/react-embeds"
 
 const BannerImage = ({ blok }) => {
+  const [videoError, setVideoError] = useState(false)
+
+  const handleVideoError = () => {
+    setVideoError(true)
+  }
+
   return (
     <div {...storyblokEditable(blok)}>
       <section className="single-projectSec1">
         <div className="custom-container">
-          {blok && blok.wistia_video_id ? (
+          {blok && blok.wistia_video_id && !videoError ? (
             <WistiaProvider>
-              <WistiaPlayer hashedId={blok.wistia_video_id} autoPlay />
+              <WistiaPlayer
+                hashedId={blok.wistia_video_id}
+                autoPlay
+                onError={handleVideoError}
+              />
             </WistiaProvider>
           ) : (
             <div className="singl-project-sec1-img">
