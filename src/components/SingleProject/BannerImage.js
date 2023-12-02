@@ -5,7 +5,9 @@ import { WistiaProvider, WistiaPlayer } from "@wistia/react-embeds"
 const BannerImage = ({ blok }) => {
   const [videoError, setVideoError] = useState(false)
 
-  const handleVideoError = () => {
+  const handleVideoError = error => {
+    console.log("error ----------", error)
+    console.log("error ----------", error.message)
     setVideoError(true)
   }
 
