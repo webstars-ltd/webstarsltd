@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Logo from "../../assets/images/logo-white.png"
+import Logo from "../../assets/images/logo-white1.png"
 
 // This is a global footer component for the webstarsltd template
 const Footer = () => {
