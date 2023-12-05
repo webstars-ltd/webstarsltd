@@ -2,8 +2,8 @@ import React from "react"
 import { Link } from "gatsby"
 import useDarkMode from "use-dark-mode"
 
-import Logo from "../../assets/images/logo.png"
-import LogoWhite from "../../assets/images/logo-white.png"
+import Logo from "../../assets/images/logo-new.png"
+import LogoWhite from "../../assets/images/logo-white1.png"
 
 const Navbar = () => {
   const [menu, setMenu] = React.useState(true)
