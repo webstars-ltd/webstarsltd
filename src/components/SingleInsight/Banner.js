@@ -7,8 +7,26 @@ const Banner = ({ blok }) => {
       <section className="home-banner-single-insight">
         <div className="container">
           <h1>
-            <span className="d-block">{blok.headline}</span>
-            <span className="theme-color">{blok.subtitle}</span>
+            <span
+              className="d-block"
+              style={{
+                fontSize: blok.headline_font
+                  ? `${blok.headline_font}px`
+                  : "55px",
+              }}
+            >
+              {blok.headline}
+            </span>
+            <span
+              className="theme-color"
+              style={{
+                fontSize: blok.headline_sub_part_font
+                  ? `${blok.headline_sub_part_font}px`
+                  : "55px",
+              }}
+            >
+              {blok.subtitle}
+            </span>
           </h1>
         </div>
       </section>

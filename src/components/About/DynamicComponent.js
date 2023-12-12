@@ -18,11 +18,7 @@ const DynamicComponent = ({ blok }) => {
     return <Component blok={blok} key={blok._uid} />
   }
 
-  return (
-    <div>
-      <div>DynamicComponent</div>
-    </div>
-  )
+  return <div></div>
 }
 
 export default DynamicComponent
