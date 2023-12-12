@@ -56,7 +56,7 @@ const Insights = () => {
       return false
     })
 
-    const sortedStories = stories.sort(
+    const sortedStories = filteredData.sort(
       (a, b) => new Date(b.published_at) - new Date(a.published_at)
     )
 
