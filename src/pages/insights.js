@@ -33,7 +33,6 @@ const Insights = () => {
       data: { stories },
     } = await StoryBlokApi.get("cdn/stories/", {
       starts_with: "insights/",
-      sort_by: "published_at:desc",
     })
 
     const updatedStories = stories.slice(1)
@@ -57,8 +56,12 @@ const Insights = () => {
       return false
     })
 
-    setInsights(filteredData)
-    setAllInsights(filteredData)
+    const sortedStories = stories.sort(
+      (a, b) => new Date(b.published_at) - new Date(a.published_at)
+    )
+
+    setInsights(sortedStories)
+    setAllInsights(sortedStories)
   }
 
   useEffect(() => {
