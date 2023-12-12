@@ -7,8 +7,26 @@ const Banner = ({ blok }) => {
       <div className="custom-container">
         <div className="home-banner">
           <h1>
-            <span className="d-block">{blok.headline}</span>
-            <span className="theme-color">{blok.headline_sub_part}</span>
+            <span
+              className="d-block"
+              style={{
+                fontSize: blok.headline_font
+                  ? `${blok.headline_font}px`
+                  : "55px",
+              }}
+            >
+              {blok.headline}
+            </span>
+            <span
+              className="theme-color"
+              style={{
+                fontSize: blok.headline_sub_part_font
+                  ? `${blok.headline_sub_part_font}px`
+                  : "55px",
+              }}
+            >
+              {blok.headline_sub_part}
+            </span>
           </h1>
         </div>
       </div>
