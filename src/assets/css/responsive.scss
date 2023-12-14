@@ -55,6 +55,10 @@ $value_eight: 480px;
 
   .testimonialSection {
     padding: 30px 0;
+    text-align: center !important;
+  }
+
+  .testiSec-cont {
     text-align: center;
   }
 
@@ -131,9 +135,14 @@ $value_eight: 480px;
     }
   }
 
+  .single-projectSec2 {
+    padding-left: 20px;
+  }
+
   .home-banner,
   .home-banner-project,
-  .home-banner-profile {
+  .home-banner-profile,
+  .home-banner-single-project {
     padding: {
       top: 160px;
       bottom: 70px;
