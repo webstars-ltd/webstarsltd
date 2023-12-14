@@ -60,6 +60,10 @@ $value_eight: 480px;
 
   .testiSec-cont {
     text-align: center;
+
+    ul {
+      padding-left: 2rem !important;
+    }
   }
 
   .testimonial-separator {
@@ -141,8 +145,7 @@ $value_eight: 480px;
 
   .home-banner,
   .home-banner-project,
-  .home-banner-profile,
-  .home-banner-single-project {
+  .home-banner-profile {
     padding: {
       top: 160px;
       bottom: 70px;
@@ -151,6 +154,17 @@ $value_eight: 480px;
     h1 {
       font-size: 30px;
       line-height: 40px;
+    }
+  }
+
+  .single-projectSec2 {
+    padding-bottom: 0px;
+  }
+
+  .home-banner-single-project {
+    padding: {
+      top: 160px;
+      bottom: 70px;
     }
   }
 
