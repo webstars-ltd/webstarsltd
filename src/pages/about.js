@@ -32,7 +32,6 @@ const About = () => {
     <Layout>
       <SEO title="About" />
       <Navbar />
-      <div style={{ marginTop: 140 }}></div>
       {/* Body Component Starts here */}
       <AboutMain blok={story.content} />
       {/* Body Component Ends here */}
