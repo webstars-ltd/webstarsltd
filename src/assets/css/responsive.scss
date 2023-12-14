@@ -121,10 +121,23 @@ $value_eight: 480px;
   }
 
   .home-banner {
+    padding: {
+      top: 160px;
+      bottom: 70px;
+    }
+
     h1 {
       font-size: 30px;
       line-height: 40px;
     }
+  }
+
+  .insights-link-space {
+    margin-bottom: 0px !important;
+  }
+
+  .home-pb .pb-80 {
+    padding-bottom: 0px;
   }
 
   .global-aud,
