@@ -124,6 +124,13 @@ $value_eight: 480px;
     padding-top: 20px;
   }
 
+  .all-insight-banner {
+    padding: {
+      top: 160px !important;
+      bottom: 70px !important;
+    }
+  }
+
   .home-banner,
   .home-banner-project,
   .home-banner-profile {
@@ -253,7 +260,7 @@ $value_eight: 480px;
 
   .insight-display {
     .row {
-      .col-lg-6:first-child {
+      .col-lg-6 {
         padding: 0px !important;
         margin-bottom: 40px;
       }
