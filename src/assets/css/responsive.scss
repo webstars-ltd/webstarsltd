@@ -17,6 +17,15 @@ $value_eight: 480px;
     overflow-x: hidden;
   }
 
+  .single-projectSec2:first-child {
+    padding-top: 0px;
+  }
+
+  .single-project-paragraph,
+  .singl-project-sec1-img {
+    margin-bottom: 90px;
+  }
+
   .singleInsightSec1-profile {
     margin-bottom: 30px;
   }
@@ -560,22 +569,17 @@ $value_eight: 480px;
       padding: 0px;
     }
 
+    .insights-link-space {
+      width: 100%;
+    }
+
     &-one {
       width: 100%;
-
-      h4 {
-        // max-width: 20px;
-      }
     }
 
     &-two {
       float: none;
       width: 100%;
-      height: 459px;
-
-      // h4 {
-      //   max-width: 500px;
-      // }
     }
   }
 
@@ -649,6 +653,56 @@ $value_eight: 480px;
 
 /* Min width 768px to Max width 991px */
 @media only #{$media} and ($feature_min : $value_three) and ($feature_max : $value_four) {
+  .single-projectSec2,
+  .single-project-paragraph {
+    padding-left: 20px;
+  }
+  .singleInsightSec1-cont {
+    padding-right: 20px;
+  }
+  .testimonialSection-single-project {
+    .row {
+      flex-direction: column;
+      .col-lg-3,
+      .col-lg-8 {
+        width: 100% !important;
+      }
+      .testiSec-img {
+        padding-bottom: 10px;
+        text-align: center;
+      }
+
+      .testiSec-cont {
+        text-align: center;
+      }
+
+      .testiSec-cont h6 {
+        font-size: 26px;
+        padding-bottom: 10px;
+        padding: 0px 30px;
+        line-height: 26px;
+        margin-top: 20px;
+      }
+
+      .testiSec-cont p {
+        padding: 0px 30px;
+        margin-top: 20px;
+      }
+
+      .testiSec-cont p,
+      .testiSec-cont p a {
+        line-height: 26px;
+        font-size: 20px;
+      }
+
+      .testiSec-cont a {
+        font-size: 20px;
+      }
+    }
+  }
+  body {
+    color: #0e314c !important;
+  }
   .client-logoSection {
     .clientLogoSec-hd {
       text-align: center;

@@ -20,13 +20,10 @@ const Categories = ({ blok, setCategoryTitle, categoryTitle, showMore }) => {
         <div className="container">
           <div className="insights-Banner">
             <div className="row">
-              <div className="col-md-2">
+              <div className="col-md-12">
                 <div className="insights-Banner-cont">
                   <h6>{blok.title}</h6>
                 </div>
-              </div>
-
-              <div className="col-md-10">
                 <div className="insights-Banner-btn">
                   <ul>
                     {blok.category_list.map(category => (
@@ -46,6 +43,27 @@ const Categories = ({ blok, setCategoryTitle, categoryTitle, showMore }) => {
                   </ul>
                 </div>
               </div>
+
+              {/* <div className="col-md-10">
+                <div className="insights-Banner-btn">
+                  <ul>
+                    {blok.category_list.map(category => (
+                      <li
+                        key={category.title}
+                        className={
+                          categoryTitle === category.title ? "current" : ""
+                        }
+                      >
+                        <button
+                          onClick={() => switchCategoryHandler(category.title)}
+                        >
+                          {category.title}
+                        </button>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div> */}
             </div>
           </div>
         </div>

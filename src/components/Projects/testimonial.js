@@ -64,9 +64,6 @@ const Testimonial = ({ blok }) => {
           </div>
         </section>
       </div>
-      <div className="testimonial-separator">
-        <div className="separator" />
-      </div>
     </>
   )
 }

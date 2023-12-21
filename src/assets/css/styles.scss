@@ -1122,7 +1122,7 @@ Home CSS
 .marketing-guide-section {
   padding: {
     top: 70px;
-    bottom: 75px;
+    bottom: 155px;
   }
 }
 
@@ -1402,7 +1402,10 @@ Home CSS
 }
 
 .testimonialSection {
-  padding: 110px 0px;
+  padding: {
+    top: 55px;
+    bottom: 110px;
+  }
 }
 
 .testimonialSection-single-project {
@@ -1723,7 +1726,8 @@ Home CSS
 
 /*Single Project Section 2 Start*/
 .single-projectSec2 {
-  padding: 90px 0;
+  // padding: 90px 0;
+  padding-top: 90px;
 }
 
 .singl-project-sec2-cont h6 {
@@ -2115,7 +2119,7 @@ Home CSS
 }
 
 .insights-Banner-btn ul {
-  padding-left: 14px !important;
+  padding-left: 5px !important;
 }
 
 .insights-Banner-btn ul li {
