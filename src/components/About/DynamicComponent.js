@@ -4,6 +4,7 @@ import AboutDescription from "./AboutDescription"
 import MarketingGuide from "../Home/MarketingGuide"
 import BannerImage from "../SingleProject/BannerImage"
 import Banner from "./Banner"
+import Clients from "../Process/Clients"
 import Text from "./Text"
 
 const Components = {
@@ -11,6 +12,7 @@ const Components = {
   "Project Banner": BannerImage,
   about_description: AboutDescription,
   "Marketing Guide": MarketingGuide,
+  "Clients Logo Wall": Clients,
   "Bottom Headline Text": Text,
 }
 
