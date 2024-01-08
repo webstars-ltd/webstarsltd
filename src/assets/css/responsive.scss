@@ -78,20 +78,6 @@ $value_eight: 480px;
     padding: 0px 30px;
   }
 
-  .testiSec-main {
-    .row {
-      .col-lg-3 {
-        padding-right: 0px !important;
-        width: 100% !important;
-      }
-
-      .col-lg-8 {
-        padding-left: 0px !important;
-        width: 100% !important;
-      }
-    }
-  }
-
   .testiSec-img {
     padding-bottom: 10px;
     text-align: center;
@@ -482,6 +468,27 @@ $value_eight: 480px;
     -moz-column-count: 2;
     column-count: 2;
   }
+  .testiSec-main {
+    .row {
+      .col-lg-3 {
+        padding-right: 0px !important;
+        width: 100% !important;
+      }
+
+      .col-lg-8 {
+        padding-left: 0px !important;
+        width: 100% !important;
+      }
+    }
+  }
+  .testiSec-img {
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  .testiSec-cont {
+    padding: 0px 10px;
+    text-align: center;
+  }
 }
 
 @media (max-width: $value_one) {
@@ -654,6 +661,7 @@ $value_eight: 480px;
   .single-projectSec2,
   .single-project-paragraph {
     padding-left: 20px;
+    padding-right: 20px;
   }
   .singleInsightSec1-cont {
     padding-right: 20px;
