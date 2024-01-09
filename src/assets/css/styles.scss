@@ -991,6 +991,10 @@ Home CSS
   margin-bottom: 70px;
 }
 
+.insights-link-space {
+  width: 100%;
+}
+
 .insight-display-list {
   margin-bottom: 46px;
 
@@ -1020,7 +1024,7 @@ Home CSS
 
   &-one {
     position: relative;
-    width: 470px;
+    width: 100%;
     height: 560px;
 
     h6 {
@@ -1071,7 +1075,7 @@ Home CSS
   &-two {
     position: relative;
     float: right;
-    width: 470px;
+    width: 100%;
     height: 560px;
 
     h6 {
