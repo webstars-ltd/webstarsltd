@@ -6,7 +6,7 @@ import { useStoryblok } from "../../utils/storyblok"
 // Page level import statements
 import DynamicBlogComponent from "./DynamicBlogComponent"
 
-const BlogListComponent = ({ story }) => {
+const BlogListComponent = ({ story, hideHash }) => {
   let originalStory
   originalStory = useStoryblok(story)
 
@@ -17,6 +17,7 @@ const BlogListComponent = ({ story }) => {
         blok={childBlok}
         key={childBlok._uid}
         slug={story.slug}
+        hideHash={hideHash}
       />
     ))
 

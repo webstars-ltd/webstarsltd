@@ -11,13 +11,13 @@ const Components = {
   show_list: ProjectList,
   "Marketing Guide": MarketingGuide,
   "Bottom Headline Text": Text,
-  blogs_on_landing_page: LandingPageBlogs
+  blogs_on_landing_page: LandingPageBlogs,
 }
 
 const DynamicComponent = ({ blok }) => {
   if (typeof Components[blok.component] !== "undefined") {
     const Component = Components[blok.component]
-    return <Component blok={blok} key={blok._uid} />
+    return <Component blok={blok} key={blok._uid} hideHash={true} />
   }
 
   return <></>
