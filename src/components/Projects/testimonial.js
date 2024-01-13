@@ -17,7 +17,7 @@ const Testimonial = ({ blok }) => {
           <div className="custom-container">
             <div className="testiSec-main">
               <div className="row">
-                <div className="col-lg-3 col-sm-12 col-md-6">
+                <div className="col-sm-12 col-lg-3">
                   <div className="testiSec-img">
                     <img
                       src={blok.card[0].card[0].person_img.filename}
@@ -26,7 +26,7 @@ const Testimonial = ({ blok }) => {
                   </div>
                 </div>
 
-                <div className="col-lg-8 col-sm-12 col-md-6">
+                <div className="col-sm-12 col-lg-9">
                   <div className="testiSec-cont">
                     <h6>{blok.card[0].card[0].title}</h6>
                     {render(blok.card[0].card[0].text, {
@@ -39,11 +39,11 @@ const Testimonial = ({ blok }) => {
                     })}
 
                     <ul className="mn-social-icon">
-                      <li>
+                      {/* <li>
                         <Link to={blok.card[0].card[0].facebook_profile_url}>
                           <FontAwesomeIcon icon={faFacebookSquare} />
                         </Link>
-                      </li>
+                      </li> */}
 
                       <li>
                         <Link to={blok.card[0].card[0].linkedin_profile_url}>
@@ -51,11 +51,11 @@ const Testimonial = ({ blok }) => {
                         </Link>
                       </li>
 
-                      <li>
+                      {/* <li>
                         <Link to={blok.card[0].card[0].twitter_profile_url}>
                           <FontAwesomeIcon icon={faSquareXTwitter} />
                         </Link>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
                 </div>
