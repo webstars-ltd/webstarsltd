@@ -22,7 +22,7 @@ const SimilarProjectQuote = ({ blok }) => {
                 </div>
               </div>
 
-              <div className="col-sm-12 col-lg-8">
+              <div className="col-sm-12 col-lg-9">
                 <div className="testiSec-cont">
                   <h6>{blok.card[0].title}</h6>
                   {render(blok.card[0].text, {
