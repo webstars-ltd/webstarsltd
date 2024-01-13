@@ -1,35 +1,15 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
 
-import ListComponent from "./ListComponent"
+import DynamicListComponent from "./DynamicListComponent"
 
-const ProjectLists = () => {
-  let { story } = useStaticQuery(graphql`
-    query {
-      story: allStoryblokEntry(
-        filter: { field_component: { eq: "SingleProject" } }
-      ) {
-        edges {
-          node {
-            field_component
-            slug
-            uuid
-            id
-            name
-            content
-          }
-        }
-      }
-    }
-  `)
-
-  return (
-    <>
-      {story.edges.map((originalStory, index) => (
-        <ListComponent story={originalStory.node} key={index} />
-      ))}
-    </>
-  )
+const ProjectLists = ({ projects }) => {
+  return projects.map((originalStory, index) => (
+    <DynamicListComponent
+      blok={originalStory.content.body[0]}
+      key={index}
+      slug={originalStory.slug}
+    />
+  ))
 }
 
 export default ProjectLists

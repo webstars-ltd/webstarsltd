@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 // App level import statements
@@ -10,9 +10,11 @@ import Footer from "../components/_App/Footer"
 // Project Page components import statements
 import MainComponent from "../components/Projects/MainComponent"
 
-import { useStoryblok } from "../utils/storyblok"
+import { useStoryblok, StoryBlokApi } from "../utils/storyblok"
 
 const Home = () => {
+  const [projects, setProjects] = useState([])
+
   let { story } = useStaticQuery(graphql`
     query {
       story: storyblokEntry(name: { eq: "Projects" }) {
@@ -25,6 +27,27 @@ const Home = () => {
     }
   `)
 
+  const fetchQuery = async () => {
+    const {
+      data: { stories },
+    } = await StoryBlokApi.get("cdn/stories/", {
+      starts_with: "projects/",
+    })
+    const updatedStories = stories.slice(1)
+
+    const sortedStories = updatedStories.sort(
+      (a, b) =>
+        new Date(b.content.body[0].project_display[0].published_date) -
+        new Date(a.content.body[0].project_display[0].published_date)
+    )
+    console.log(sortedStories)
+    setProjects(sortedStories)
+  }
+
+  useEffect(() => {
+    fetchQuery()
+  }, [])
+
   story = useStoryblok(story)
 
   return (
@@ -33,7 +56,7 @@ const Home = () => {
       <SEO title="Projects" />
       <Navbar />
       {/* Body Component Starts here */}
-      <MainComponent blok={story.content} />
+      <MainComponent blok={story.content} projects={projects} />
       {/* Body Component Ends here */}
       <Footer />
     </Layout>

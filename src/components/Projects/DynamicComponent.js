@@ -13,10 +13,10 @@ const Components = {
   show_list: ProjectLists,
 }
 
-const DynamicComponent = ({ blok }) => {
+const DynamicComponent = ({ blok, projects }) => {
   if (typeof Components[blok.component] !== "undefined") {
     const Component = Components[blok.component]
-    return <Component blok={blok} key={blok._uid} />
+    return <Component blok={blok} key={blok._uid} projects={projects} />
   }
 
   return <></>
