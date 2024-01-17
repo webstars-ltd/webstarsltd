@@ -14,7 +14,7 @@ const InsightLists = ({ blok, slug, index, hideHash }) => {
         }
         style={{ backgroundColor: blok.insights[0].background_hex_code }}
       >
-        {!hideHash && <h6>{blok.insights[0].tag}</h6>}
+        {!hideHash ? <h6>{blok.insights[0].tag}</h6> : <h6></h6>}
 
         <h4>{blok.insights[0].title}</h4>
         <img
