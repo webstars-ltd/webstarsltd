@@ -14,11 +14,13 @@ const Footer = () => {
         <div className="row">
           <div className="col-lg-5">
             <blockquote>
-              "Its well designed, easy to use and very flexible without being
-              bloated. Great value for money."
+              "Your professionalism, knowledge, and ease have made the
+              collaboration delightful."
             </blockquote>
             <div className="author-info-d-sm">
-              <h6 className="author">Carlos Wilkerson</h6>
+              <h6 className="author">
+                Sophia Boutalbi, International Group of P&I Clubs
+              </h6>
             </div>
           </div>
           <div className="col-lg-2">
