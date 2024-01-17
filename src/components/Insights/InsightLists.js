@@ -14,11 +14,8 @@ const InsightLists = ({ blok, slug, index, hideHash }) => {
         }
         style={{ backgroundColor: blok.insights[0].background_hex_code }}
       >
-        <h6>
-          {hideHash
-            ? blok.insights[0].tag.replace(/#/g, "")
-            : blok.insights[0].tag}
-        </h6>
+        {!hideHash && <h6>{blok.insights[0].tag}</h6>}
+
         <h4>{blok.insights[0].title}</h4>
         <img
           src={blok.insights[0].image.filename}
