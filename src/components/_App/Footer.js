@@ -100,7 +100,9 @@ const Footer = () => {
         <div className="row">
           <div className="col-lg-5">
             <div className="author-info">
-              <h6 className="author">Carlos Wilkerson</h6>
+              <h6 className="author">
+                Sophia Boutalbi, International Group of P&I Clubs
+              </h6>
             </div>
           </div>
           <div className="col-lg-7">
