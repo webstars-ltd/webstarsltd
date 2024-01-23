@@ -33,6 +33,7 @@ const Insights = () => {
       data: { stories },
     } = await StoryBlokApi.get("cdn/stories/", {
       starts_with: "insights/",
+      per_page: 100,
     })
 
     const updatedStories = stories.slice(1)
