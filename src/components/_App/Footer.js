@@ -65,8 +65,11 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="https://twitter.com/WebstarsLtd" target="_blank">
-                    Twitter
+                  <Link
+                    to="https://www.tiktok.com/@webstarsltd"
+                    target="_blank"
+                  >
+                    TikTok
                   </Link>
                 </li>
                 <li>
@@ -112,7 +115,7 @@ const Footer = () => {
                   <li>&copy; Webstars {new Date().getFullYear()}</li>
                   <li>
                     <Link
-                      to="https://app.privasee.io/privacy-portal/63628705d67de9001332dd71"
+                      to="https://platform.illow.io/#/policy/cookie/985708de-addb-4d38-94b8-90e3700b80a5"
                       target="_blank"
                     >
                       Privacy & Cookies
