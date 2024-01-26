@@ -5,8 +5,7 @@ import { useStoryblok } from "../../utils/storyblok"
 import GlobalAudience from "../Projects/GlobalAudience"
 import EnvelopeSection from "../Projects/EnvelopeSection"
 
-const SimilarProjects = ({ url }) => {
-  let storyToSuggest = []
+const SimilarProjects = ({ blok }) => {
   let storyToSuggestCopyOne
   let { story } = useStaticQuery(graphql`
     query {
@@ -27,20 +26,15 @@ const SimilarProjects = ({ url }) => {
     }
   `)
 
-  story.edges.forEach(currentStory => {
-    if (
-      `projects/${currentStory.node.slug}` !== url &&
-      storyToSuggest.length <= 1
-    ) {
-      storyToSuggest.push(currentStory.node)
-    }
-  })
+  const projectToSuggest = story.edges.filter(
+    project => project.node.name === blok.project_to_suggest
+  )
 
-  if (storyToSuggest.length) {
-    storyToSuggestCopyOne = useStoryblok(storyToSuggest[0])
+  if (projectToSuggest.length) {
+    storyToSuggestCopyOne = useStoryblok(projectToSuggest[0].node)
   }
 
-  return storyToSuggest.length ? (
+  return (
     <>
       {storyToSuggestCopyOne.content.body[0]?.project_display[0].component ===
       "Envelope Section" ? (
@@ -55,7 +49,7 @@ const SimilarProjects = ({ url }) => {
         />
       )}
     </>
-  ) : null
+  )
 }
 
 export default SimilarProjects

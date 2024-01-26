@@ -18,7 +18,7 @@ const Components = {
   single_project_banner_text: BannerText,
   single_project_paragraph: Paragrah,
   single_project_solution: Solution,
-  show_projects_suggestions: SimilarProjects,
+  project_suggestion: SimilarProjects,
 }
 
 const DyanmicComponent = ({ blok, url }) => {
