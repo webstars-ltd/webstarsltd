@@ -1266,9 +1266,9 @@ Home CSS
     color: #329999;
     transition: all 0.5s;
 
-    &:hover {
-      color: #777a7b;
-      cursor: pointer;
+    span {
+      color: #329999 !important;
+      transition: all 0.5s;
     }
   }
 }
@@ -2629,13 +2629,17 @@ body.dark-mode {
   .text {
     h2 p {
       color: #fff;
+
+      span {
+        color: #fff !important;
+      }
     }
 
     .underline-style {
       color: #079c9e;
 
-      &:hover {
-        color: #63acad;
+      span {
+        color: #079c9e !important;
       }
     }
   }
