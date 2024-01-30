@@ -40,12 +40,16 @@ const SimilarProjects = ({ blok }) => {
       storyToSuggestCopyOne.content.body[0]?.project_display[0].component ===
         "Envelope Section" ? (
         <EnvelopeSection
-          component={storyToSuggestCopyOne?.content.body[0]?.project_display[0]}
+          component={
+            storyToSuggestCopyOne?.content?.body[0]?.project_display[0]
+          }
           slug={storyToSuggestCopyOne.slug}
         />
       ) : (
         <GlobalAudience
-          component={storyToSuggestCopyOne?.content.body[0]?.project_display[0]}
+          component={
+            storyToSuggestCopyOne?.content?.body[0]?.project_display[0]
+          }
           slug={storyToSuggestCopyOne.slug}
         />
       )}
