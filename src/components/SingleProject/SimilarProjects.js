@@ -6,7 +6,7 @@ import GlobalAudience from "../Projects/GlobalAudience"
 import EnvelopeSection from "../Projects/EnvelopeSection"
 
 const SimilarProjects = ({ blok }) => {
-  let storyToSuggestCopyOne
+  let storyToSuggestCopyOne = {}
   let { story } = useStaticQuery(graphql`
     query {
       story: allStoryblokEntry(
@@ -36,7 +36,7 @@ const SimilarProjects = ({ blok }) => {
 
   return (
     <>
-      {storyToSuggestCopyOne.content.body[0]?.project_display[0].component ===
+      {storyToSuggestCopyOne?.content.body[0]?.project_display[0].component ===
       "Envelope Section" ? (
         <EnvelopeSection
           component={storyToSuggestCopyOne.content.body[0]?.project_display[0]}
