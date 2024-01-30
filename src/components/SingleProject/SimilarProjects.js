@@ -37,6 +37,7 @@ const SimilarProjects = ({ blok }) => {
   return (
     <>
       {Object.keys(storyToSuggestCopyOne).length > 0 &&
+      projectToSuggest.length &&
       storyToSuggestCopyOne.content.body[0]?.project_display[0].component ===
         "Envelope Section" ? (
         <EnvelopeSection
