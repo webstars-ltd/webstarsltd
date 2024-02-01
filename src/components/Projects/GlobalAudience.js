@@ -3,6 +3,7 @@ import React from "react"
 import Globe from "../../assets/images/globe.png"
 
 const GlobalAudience = () => {
+  console.log("=== Here on the GlobalAudience")
   return (
     <div className="global-audience">
       <div className="custom-container">
