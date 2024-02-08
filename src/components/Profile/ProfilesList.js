@@ -57,9 +57,6 @@ const ProfilesList = ({ blok }) => {
           </div>
         </div>
       </div>
-      <div className="testimonial-separator">
-        <div className="separator" />
-      </div>
     </>
   )
 }

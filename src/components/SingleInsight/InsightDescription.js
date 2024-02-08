@@ -7,9 +7,9 @@ import moment from "moment"
 import {
   faFacebookSquare,
   faLinkedin,
-  faSquareXTwitter,
   faInstagram,
   faYoutube,
+  faTiktok
 } from "@fortawesome/free-brands-svg-icons"
 import { render } from "storyblok-rich-text-react-renderer"
 const NativeForms = React.lazy(() => import("native-forms-react"))
@@ -74,11 +74,11 @@ const InsightDescription = ({ blok }) => {
                     <FontAwesomeIcon icon={faLinkedin} />
                   </Link>
                   <Link
-                    to={"https://twitter.com/WebstarsLtd"}
+                    to={"https://www.tiktok.com/@webstarsltd"}
                     className="profile-fb"
                     target="_blank"
                   >
-                    <FontAwesomeIcon icon={faSquareXTwitter} />
+                    <FontAwesomeIcon icon={faTiktok} />
                   </Link>
                   <Link
                     to={"https://www.instagram.com/webstarsltd/"}
