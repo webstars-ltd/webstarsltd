@@ -2593,8 +2593,14 @@ body.dark-mode {
     color: #079c9e;
   }
 
-  .singl-project-sec2-cont p {
-    color: #fff;
+  .singl-project-sec2-cont {
+    p {
+      color: #fff;
+
+      & > * {
+        color: #fff;
+      }
+    }
   }
 
   .insights-Banner-cont {
