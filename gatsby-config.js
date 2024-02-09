@@ -1,3 +1,5 @@
+require("dotenv").config()
+
 module.exports = {
   siteMetadata: {
     siteUrl: `https://updatedsite-dev.netlify.app`,
@@ -48,7 +50,7 @@ module.exports = {
     {
       resolve: "gatsby-source-storyblok",
       options: {
-        accessToken: "0rQfr5rSI4sHmYEKj6y9zgtt",
+        accessToken: process.env.STORYBLOK_ACCESS_TOKEN,
         version: "published",
         localAssets: true,
       },
