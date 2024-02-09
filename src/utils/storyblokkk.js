@@ -6,7 +6,7 @@ const sbConfig = config.plugins.find(
 )
 
 storyblokInit({
-  accessToken: sbConfig.options.accessToken,
+  accessToken: process.env.STORYBLOK_ACCESS_TOKEN,
   use: [apiPlugin],
 })
 
