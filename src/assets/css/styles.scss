@@ -682,7 +682,6 @@ Home CSS
   }
 }
 
-
 .singleproject-sec5-main {
   .pr-0 {
     padding-right: 0px !important;
@@ -2593,8 +2592,14 @@ body.dark-mode {
     color: #079c9e;
   }
 
-  .singl-project-sec2-cont p {
-    color: #fff;
+  .singl-project-sec2-cont {
+    p {
+      color: #fff;
+
+      & > * {
+        color: #fff;
+      }
+    }
   }
 
   .insights-Banner-cont {
