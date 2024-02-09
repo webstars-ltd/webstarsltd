@@ -540,7 +540,7 @@ Home CSS
 
 .about-description {
   padding: {
-    top: 100px;
+    top: 30px;
   }
 }
 
@@ -682,11 +682,6 @@ Home CSS
   }
 }
 
-.home-banner-project {
-  padding: {
-    bottom: 193px;
-  }
-}
 
 .singleproject-sec5-main {
   .pr-0 {
@@ -2055,6 +2050,19 @@ Home CSS
   color: #0e1828;
 }
 
+.singleInsightSec1-cont {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    span {
+      color: #309c99 !important;
+    }
+  }
+}
+
 .singleInsightSec1-cont p.last {
   padding-bottom: 0;
 }
@@ -2631,7 +2639,7 @@ body.dark-mode {
       color: #fff;
 
       span {
-        color: #fff !important;
+        color: #fff;
       }
     }
 

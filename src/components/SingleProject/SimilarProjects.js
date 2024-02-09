@@ -1,12 +1,9 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-import { useStoryblok } from "../../utils/storyblok"
-import GlobalAudience from "../Projects/GlobalAudience"
-import EnvelopeSection from "../Projects/EnvelopeSection"
+import SimilarProjectRendering from "./SimilarProjectRendering"
 
 const SimilarProjects = ({ blok }) => {
-  let storyToSuggestCopyOne
   let { story } = useStaticQuery(graphql`
     query {
       story: allStoryblokEntry(
@@ -26,30 +23,16 @@ const SimilarProjects = ({ blok }) => {
     }
   `)
 
-  const projectToSuggest = story.edges.filter(
-    project => project.node.name === blok.project_to_suggest
-  )
+  if (blok && blok.project_to_suggest) {
+    const projectToSuggest = story.edges.filter(
+      project => project.node.name === blok.project_to_suggest
+    )
 
-  if (projectToSuggest.length) {
-    storyToSuggestCopyOne = useStoryblok(projectToSuggest[0].node)
-  }
-
-  return (
-    <>
-      {storyToSuggestCopyOne.content.body[0]?.project_display[0].component ===
-      "Envelope Section" ? (
-        <EnvelopeSection
-          component={storyToSuggestCopyOne.content.body[0]?.project_display[0]}
-          slug={storyToSuggestCopyOne.slug}
-        />
-      ) : (
-        <GlobalAudience
-          component={storyToSuggestCopyOne.content.body[0]?.project_display[0]}
-          slug={storyToSuggestCopyOne.slug}
-        />
-      )}
-    </>
-  )
+    if (projectToSuggest.length)
+      return (
+        <SimilarProjectRendering suggestedProject={projectToSuggest[0].node} />
+      )
+  } else return <></>
 }
 
 export default SimilarProjects

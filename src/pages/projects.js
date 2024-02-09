@@ -40,7 +40,6 @@ const Home = () => {
         new Date(b.content.body[0].project_display[0].published_date) -
         new Date(a.content.body[0].project_display[0].published_date)
     )
-    console.log(sortedStories)
     setProjects(sortedStories)
   }
 

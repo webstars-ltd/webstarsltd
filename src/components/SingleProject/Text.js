@@ -1,7 +1,11 @@
 import React from "react"
 import { storyblokEditable } from "@storyblok/js"
 import { Link } from "gatsby"
-import { render, MARK_LINK } from "storyblok-rich-text-react-renderer"
+import {
+  render,
+  MARK_LINK,
+  MARK_TEXT_STYLE,
+} from "storyblok-rich-text-react-renderer"
 
 const Text = ({ blok }) => {
   return (
@@ -21,6 +25,11 @@ const Text = ({ blok }) => {
                       <Link to={href} className="underline-style">
                         {children}
                       </Link>
+                    )
+                  },
+                  [MARK_TEXT_STYLE]: (children, props) => {
+                    return (
+                      <span style={{ color: props?.color }}>{children}</span>
                     )
                   },
                 },

@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 const EnvelopeSection = ({ component, slug }) => {
+  console.log("=== Here on the EnvelopeSection")
   return (
     <div className="envelope-section-project">
       <div className="custom-container">
