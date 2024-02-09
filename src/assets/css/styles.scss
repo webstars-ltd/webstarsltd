@@ -2594,10 +2594,10 @@ body.dark-mode {
 
   .singl-project-sec2-cont {
     p {
-      color: #fff;
+      color: #fff !important;
 
       & > * {
-        color: #fff;
+        color: #fff !important;
       }
     }
   }
