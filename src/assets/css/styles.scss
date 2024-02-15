@@ -2580,6 +2580,10 @@ body.dark-mode {
 
     h1 p {
       font-size: 18px;
+      color: #fff;
+      & > * {
+        color: #fff !important;
+      }
     }
   }
 
