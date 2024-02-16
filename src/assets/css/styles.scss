@@ -682,7 +682,6 @@ Home CSS
   }
 }
 
-
 .singleproject-sec5-main {
   .pr-0 {
     padding-right: 0px !important;
@@ -1254,14 +1253,18 @@ Home CSS
     text-align: center;
     letter-spacing: -0.75px;
     color: #777a7b;
+
+    & > * {
+      color: #777a7b !important;
+    }
   }
 
   .underline-style {
     text-decoration-line: underline;
-    color: #329999;
+    color: #329999 !important;
     transition: all 0.5s;
 
-    span {
+    & > * {
       color: #329999 !important;
       transition: all 0.5s;
     }
@@ -1521,7 +1524,6 @@ Home CSS
   line-height: 28px;
   text-align: center;
   letter-spacing: 0.24px;
-  text-decoration-line: underline;
   color: #2d2d2d;
 }
 
@@ -1537,11 +1539,6 @@ Home CSS
   letter-spacing: 0.24px;
   color: #2d2d2d;
   transition: all 0.5s;
-  text-decoration: underline;
-
-  &:hover {
-    text-decoration: underline dotted;
-  }
 }
 
 .profile-fb {
@@ -1637,6 +1634,7 @@ Home CSS
 
 .client-logoSection {
   padding-bottom: 70px;
+  padding-top: 120px;
 }
 
 .clientLogoSec-hd {
@@ -2586,6 +2584,10 @@ body.dark-mode {
 
     h1 p {
       font-size: 18px;
+      color: #fff;
+      & > * {
+        color: #fff !important;
+      }
     }
   }
 
@@ -2598,7 +2600,7 @@ body.dark-mode {
       color: #fff;
 
       & > * {
-        color: #fff;
+        color: #fff !important;
       }
     }
   }
@@ -2644,15 +2646,15 @@ body.dark-mode {
     h2 p {
       color: #fff;
 
-      span {
-        color: #fff;
+      & > * {
+        color: #fff !important;
       }
     }
 
     .underline-style {
-      color: #079c9e;
+      color: #079c9e !important;
 
-      span {
+      & > * {
         color: #079c9e !important;
       }
     }
