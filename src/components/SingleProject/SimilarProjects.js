@@ -25,13 +25,14 @@ const SimilarProjects = ({ blok }) => {
 
   if (blok && blok.project_to_suggest) {
     const projectToSuggest = story.edges.filter(
-      project => project.node.name === blok.project_to_suggest
+      project => project.node.name === blok.project_to_suggest.trim()
     )
 
-    if (projectToSuggest.length)
+    if (projectToSuggest.length) {
       return (
         <SimilarProjectRendering suggestedProject={projectToSuggest[0].node} />
       )
+    } else return <></>
   } else return <></>
 }
 
