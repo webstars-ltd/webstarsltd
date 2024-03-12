@@ -2696,6 +2696,7 @@ body.dark-mode {
 .toggle-icon {
   background-color: rgb(250 250 250/1);
   border-radius: 9999px;
+  border: none;
   display: flex;
   justify-content: center;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -2705,7 +2706,7 @@ body.dark-mode {
   height: 2.5rem;
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  right: 80px;
   align-items: center;
 
   &:hover {

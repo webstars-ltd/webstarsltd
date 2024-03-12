@@ -2,22 +2,11 @@ import React from "react"
 import useDarkMode from "use-dark-mode"
 
 const DarkModeToggle = () => {
-  const darkMode = useDarkMode(false)
+  const darkMode = useDarkMode(true)
 
   return (
     <div className="dark-mode-toggle">
-      <div
-        className="toggle-icon"
-        onClick={() => {
-          if (darkMode.value === true) {
-            darkMode.disable()
-            localStorage.setItem("darkMode", "false")
-          } else {
-            darkMode.enable()
-            localStorage.setItem("darkMode", "true")
-          }
-        }}
-      >
+      <button className="toggle-icon" onClick={() => darkMode.toggle()}>
         {!darkMode.value ? (
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +37,7 @@ const DarkModeToggle = () => {
             ></path>
           </svg>
         )}
-      </div>
+      </button>
     </div>
   )
 }
