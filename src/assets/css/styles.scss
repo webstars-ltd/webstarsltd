@@ -143,6 +143,23 @@ h6 {
   padding-bottom: 80px;
 }
 
+.font-style-1 {
+  font-family: "Bitter";
+}
+
+.font-style-2 {
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+.text-brand-green {
+  color: $light-green-color;
+}
+
+.text-brand-blue {
+  color: $insight-color;
+}
+
 /*================================================
 Navbar CSS
 =================================================*/
@@ -2711,5 +2728,64 @@ body.dark-mode {
 
   &:hover {
     border-color: rgb(127 127 139/1);
+  }
+}
+
+/*================================================
+Services page CSS
+=================================================*/
+
+.pricing-table-container {
+}
+
+table.pricing-table {
+  // background-color: $light-green-color;
+  background: linear-gradient(
+    135deg,
+    $light-green-color 0%,
+    $insight-color 100%
+  );
+  width: 100%;
+  padding: 20px;
+  margin: 40px 0 0;
+
+  th,
+  td {
+    color: white;
+  }
+
+  thead {
+    tr {
+      border-bottom: 1px solid white;
+
+      th {
+        font-family: "poppins";
+        font-weight: 800;
+        border-bottom: 1px solid white;
+        padding: 30px 10px 10px 25px;
+      }
+
+      th:nth-child(2) {
+        background-color: $insight-color;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      td {
+        padding: 10px 10px 10px 25px;
+      }
+
+      td:nth-child(2) {
+        background-color: $insight-color;
+      }
+    }
+
+    tr:last-child {
+      td {
+        padding: 10px 10px 50px 25px;
+      }
+    }
   }
 }

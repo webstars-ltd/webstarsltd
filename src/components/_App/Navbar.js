@@ -93,6 +93,16 @@ const Navbar = () => {
 
                 <li className="nav-item">
                   <Link
+                    to="/services"
+                    className="nav-link"
+                    activeClassName={"active"}
+                  >
+                    Services
+                  </Link>
+                </li>
+
+                <li className="nav-item">
+                  <Link
                     to="/insights"
                     className="nav-link"
                     activeClassName={"active"}
