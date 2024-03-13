@@ -6,12 +6,17 @@ const Banner = ({ blok }) => {
 
   return (
     <div {...storyblokEditable(blok)}>
-      <div class="testimonial-separator" style={{ marginTop: "30px" }}>
+      <div class="services-pricing-separator" style={{ marginTop: "30px" }}>
         <div class="separator"></div>
       </div>
       <section className="">
         <div className="container">
-          <h2 style={{ fontSize: "40px", marginBottom: "20px" }}>Pricing</h2>
+          <h2
+            className="text-brand-blue"
+            style={{ fontSize: "40px", marginBottom: "20px" }}
+          >
+            Pricing
+          </h2>
           <h3 className="font-style-2 text-brand-green">{blok.title}</h3>
 
           {blok.pricing_table && (
