@@ -160,6 +160,14 @@ h6 {
   color: $insight-color;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.text-base {
+  font-size: 1rem;
+}
+
 /*================================================
 Navbar CSS
 =================================================*/
@@ -2750,8 +2758,19 @@ Services page CSS
   }
 }
 
+.prose {
+  margin-top: 2rem;
+
+  a {
+    color: $light-green-color;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
 table.pricing-table {
-  // background-color: $light-green-color;
   background: linear-gradient(
     135deg,
     $light-green-color 0%,
@@ -2771,7 +2790,7 @@ table.pricing-table {
       border-bottom: 1px solid white;
 
       th {
-        font-family: "poppins";
+        font-family: "Poppins, sans-serif";
         font-weight: 800;
         border-bottom: 1px solid white;
         padding: 30px 10px 10px 25px;
