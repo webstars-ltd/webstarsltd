@@ -97,7 +97,7 @@ const Navbar = () => {
                     className="nav-link"
                     activeClassName={"active"}
                   >
-                    Services
+                    Products
                   </Link>
                 </li>
 
