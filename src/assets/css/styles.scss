@@ -2821,7 +2821,7 @@ table.pricing-table {
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 470px) {
   .services-pricing-separator {
     padding: {
       top: 16px;
@@ -2836,8 +2836,16 @@ table.pricing-table {
 
     thead,
     tbody {
-      display: table;
-      width: 100%;
+      // display: table;
+      // width: 100%;
+    }
+
+    thead th,
+    tbody td {
+      // display: table-cell;
+      // max-width: 15rem;
+      // word-wrap: break-word;
+      // overflow: scroll;
     }
 
     thead th:first-child {
