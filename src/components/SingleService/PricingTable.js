@@ -2,10 +2,8 @@ import React from "react"
 import { storyblokEditable } from "@storyblok/js"
 
 const Banner = ({ blok }) => (
-  <div {...storyblokEditable(blok)}>
-    <div class="services-pricing-separator" style={{ marginTop: "30px" }}>
-      <div class="separator"></div>
-    </div>
+  <div {...storyblokEditable(blok)} className="pb-80">
+    <div class="services-pricing-separator" style={{ marginTop: "30px" }}></div>
     <section className="">
       <div className="container">
         <h2

@@ -9,6 +9,7 @@ import Text from "./Text"
 import SimilarInsights from "./SimilarInsights"
 import LandingPageBlogs from "../Home/LandingPageBlogs"
 import PricingTable from "./PricingTable"
+import Testimonial from "./Testimonial"
 
 const Components = {
   teaser_text: Banner,
@@ -16,9 +17,9 @@ const Components = {
   description_section: ServiceDescription,
   guide: MarketingGuide,
   bottom_text_copy: Text,
-  // show_insights_suggestions: SimilarInsights,
   insights_suggestions: LandingPageBlogs,
   pricing_table: PricingTable,
+  service_testimonial: Testimonial,
 }
 
 const DynamicComponent = ({ blok, url }) => {

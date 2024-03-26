@@ -4,7 +4,7 @@ import { storyblokEditable } from "@storyblok/js"
 const Guide = ({ blok }) => {
   return (
     <div {...storyblokEditable(blok)}>
-      <div className="single-insight-guide">
+      <div className="marketing-guide-section">
         <div className="custom-container">
           <div
             className="marketing-guide"
