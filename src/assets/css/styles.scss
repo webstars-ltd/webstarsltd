@@ -143,6 +143,31 @@ h6 {
   padding-bottom: 80px;
 }
 
+.font-style-1 {
+  font-family: "Bitter";
+}
+
+.font-style-2 {
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+.text-brand-green {
+  color: $light-green-color;
+}
+
+.text-brand-blue {
+  color: $insight-color;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-base {
+  font-size: 1rem;
+}
+
 /*================================================
 Navbar CSS
 =================================================*/
@@ -2597,7 +2622,7 @@ body.dark-mode {
 
   .singl-project-sec2-cont {
     p {
-      color: #fff !important;
+      color: #fff;
 
       & > * {
         color: #fff !important;
@@ -2691,11 +2716,20 @@ body.dark-mode {
       }
     }
   }
+
+  // .text-brand-green {
+  //   color: white;
+  // }
+
+  .text-brand-blue {
+    color: white;
+  }
 }
 
 .toggle-icon {
   background-color: rgb(250 250 250/1);
   border-radius: 9999px;
+  border: none;
   display: flex;
   justify-content: center;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -2705,10 +2739,152 @@ body.dark-mode {
   height: 2.5rem;
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  right: 80px;
   align-items: center;
 
   &:hover {
     border-color: rgb(127 127 139/1);
+  }
+}
+
+/*================================================
+Services page CSS
+=================================================*/
+
+.services-pricing-separator {
+  padding: {
+    top: 16px;
+    bottom: 80px;
+  }
+}
+
+.prose {
+  margin-top: 2rem;
+
+  a {
+    color: $light-green-color;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+table.pricing-table {
+  background: linear-gradient(
+    135deg,
+    $light-green-color 0%,
+    $insight-color 100%
+  );
+  width: 100%;
+  padding: 20px;
+  margin: 40px 0 0;
+
+  th,
+  td {
+    color: white;
+  }
+
+  thead {
+    tr {
+      border-bottom: 1px solid white;
+
+      th {
+        font-family: "Poppins", sans-serif;
+        font-weight: 800;
+        border-bottom: 1px solid white;
+        padding: 30px 10px 10px 25px;
+      }
+
+      th:nth-child(2) {
+        background-color: $insight-color;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      td {
+        padding: 10px 10px 10px 25px;
+      }
+
+      td:nth-child(2) {
+        background-color: $insight-color;
+      }
+    }
+
+    tr:last-child {
+      td {
+        padding: 10px 10px 50px 25px;
+      }
+    }
+  }
+}
+
+.service-testimonial {
+  font-family: "Bitter", serif;
+  font-weight: 500;
+  font-size: 2.25rem;
+  line-height: 3rem;
+  font-style: italic;
+  letter-spacing: 0.275px;
+  color: $light-green-color;
+
+  > cite {
+    &:before {
+      content: "-";
+      margin-right: 0.5rem;
+    }
+
+    display: block;
+    font-family: "Poppins", sans-serif;
+    text-align: right;
+    margin-top: 1rem;
+    font-size: 1.75rem;
+    font-style: normal;
+  }
+}
+
+.service-testimonial-section {
+  padding: {
+    top: 70px;
+    bottom: 70px;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .services-pricing-separator {
+    padding: {
+      top: 16px;
+      bottom: 40px;
+    }
+  }
+
+  table.pricing-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+
+    thead,
+    tbody {
+      // display: table;
+      // width: 100%;
+    }
+
+    thead th,
+    tbody td {
+      // display: table-cell;
+      // max-width: 15rem;
+      // word-wrap: break-word;
+      // overflow: scroll;
+    }
+
+    thead th:first-child {
+      min-width: 60%;
+    }
+
+    tbody td:nth-child(1) {
+      min-width: 60%;
+    }
   }
 }

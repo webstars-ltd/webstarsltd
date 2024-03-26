@@ -91,6 +91,16 @@ const Navbar = () => {
                   </Link>
                 </li>
 
+                {/* <li className="nav-item">
+                  <Link
+                    to="/services"
+                    className="nav-link"
+                    activeClassName={"active"}
+                  >
+                    Products
+                  </Link>
+                </li> */}
+
                 <li className="nav-item">
                   <Link
                     to="/insights"

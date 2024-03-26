@@ -5,6 +5,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const projectTemplate = path.resolve("./src/templates/SingleProject.js")
   const insightTemplate = path.resolve("./src/templates/SingleInsight.js")
+  const serviceTemplate = path.resolve("./src/templates/SingleService.js")
 
   const res = await graphql(`
     query {
@@ -32,6 +33,19 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `)
 
+  const serviceQueryResponse = await graphql(`
+    query {
+      allStoryblokEntry(filter: { field_component: { eq: "Single Service" } }) {
+        edges {
+          node {
+            field_component
+            slug
+          }
+        }
+      }
+    }
+  `)
+
   res?.data?.allStoryblokEntry.edges.forEach(edge => {
     createPage({
       component: projectTemplate,
@@ -46,6 +60,16 @@ exports.createPages = async ({ graphql, actions }) => {
     createPage({
       component: insightTemplate,
       path: `/insights/${edge?.node?.slug}`,
+      context: {
+        slug: edge?.node?.slug,
+      },
+    })
+  })
+
+  serviceQueryResponse?.data?.allStoryblokEntry.edges.forEach(edge => {
+    createPage({
+      component: serviceTemplate,
+      path: `/services/${edge?.node?.slug}`,
       context: {
         slug: edge?.node?.slug,
       },
