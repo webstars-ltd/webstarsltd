@@ -19,6 +19,10 @@ function SEO({ metaTitle, description, lang, meta, title }) {
             "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
         },
         {
+          name: "google-site-verification",
+          content: "jDRmiw0-iOUbfthBwFfbmp7pTyzNCZlzPNfCo-yL_0s",
+        },
+        {
           name: `title`,
           content: metaTitle,
         },
